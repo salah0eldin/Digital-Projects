@@ -1,0 +1,107 @@
+====================================================================================================
+Lint Check Report
+Questa Lint  Version 2021.1 4558100 win64 28-Jan-2021
+
+Timestamp            : Sun Feb 23 00:00:28 2025
+Description          : Report for referring checks count, check violations details, and  design information
+Design               : DSP48A1
+Database             : D:/Learning/DigitalKareem/Projects/DSP48A1/lint/lint.db
+Design Quality Score : 100%
+
+Sections:
+   Section 1 : Check Summary
+   Section 2 : Check Details
+   Section 3 : Design Information
+====================================================================================================
+
+
+====================================================================================================
+Section 1 : Check Summary
+====================================================================================================
+-------------
+| Error (0) |
+-------------
+
+---------------
+| Warning (0) |
+---------------
+
+------------
+| Info (6) |
+------------
+  condition_const                         : 2
+  parameter_name_duplicate                : 1
+  comment_not_in_english                  : 1
+  line_char_large                         : 2
+
+----------------
+| Resolved (0) |
+----------------
+
+
+====================================================================================================
+Section 2 : Check Details
+====================================================================================================
+-------------
+| Error (0) |
+-------------
+
+
+---------------
+| Warning (0) |
+---------------
+
+
+------------
+| Info (6) |
+------------
+
+Check: condition_const [Category: Rtl Design Style] (2)
+       [Message: Condition expression is a constant. Module '<module>', File '<file>', Line '<line>'.]
+-------------------------------------------------------------------------------------------------------
+condition_const: [uninspected] Condition expression is a constant. Module 'DSP48A1', File 'D:/Learning/DigitalKareem/Projects/DSP48A1/DSP48A1.v', Line '224'. [RTL ID:242764da_00200]
+
+condition_const: [uninspected] Condition expression is a constant. Module 'DSP48A1', File 'D:/Learning/DigitalKareem/Projects/DSP48A1/DSP48A1.v', Line '275'. [RTL ID:723a333_00200]
+
+
+Check: parameter_name_duplicate [Category: Nomenclature Style] (1)
+       [Message: Same parameter name is used in more than one module. Parameter '<parameter>', Total count '<count>', First module: Module '<module1>', File '<file1>', Line '<line1>', Second module: Module '<module2>', File '<file2>', Line '<line2>']
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+parameter_name_duplicate: [uninspected] Same parameter name is used in more than one module. Parameter 'RSTTYPE', Total count '2', First module: Module 'DFF', File 'D:/Learning/DigitalKareem/Projects/DSP48A1/DFF.v', Line '4', Second module: Module 'DSP48A1', File 'D:/Learning/DigitalKareem/Projects/DSP48A1/DSP48A1.v', Line '59'
+
+
+Check: comment_not_in_english [Category: Nomenclature Style] (1)
+       [Message: Comments include non-English characters. File '<file>', Line '<line>'.]
+-----------------------------------------------------------------------------------------
+comment_not_in_english: [uninspected] Comments include non-English characters. File 'D:/Learning/DigitalKareem/Projects/DSP48A1/DSP48A1.v', Line '120'.
+
+
+Check: line_char_large [Category: Rtl Design Style] (2)
+       [Message: Line has more characters than the specified limit. Current Count '<count>', Specified Limit '<limit>', File '<file>', Line '<line>'.]
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+line_char_large: [uninspected] Line has more characters than the specified limit. Current Count '112', Specified Limit '110', File 'D:/Learning/DigitalKareem/Projects/DSP48A1/DSP48A1.v', Line '291'.
+
+line_char_large: [uninspected] Line has more characters than the specified limit. Current Count '113', Specified Limit '110', File 'D:/Learning/DigitalKareem/Projects/DSP48A1/DSP48A1.v', Line '292'.
+
+
+
+----------------
+| Resolved (0) |
+----------------
+
+
+
+====================================================================================================
+Section 3 : Design Information
+====================================================================================================
+-----------
+| Summary |
+-----------
+  Register Bits                           : 196
+  Latch Bits                              : 0
+  User-specified Blackboxes               : 0
+  Inferred Blackboxes                     : 0
+  Empty Modules                           : 0
+  Unresolved Modules                      : 0
+  Hierarchical IPs                        : 0
+
