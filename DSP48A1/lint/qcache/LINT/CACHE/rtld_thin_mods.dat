@@ -1,7 +1,7 @@
 >1
 >2
-13
-0:14:DFF_1806124458
+14
+0:13:DFF_382209192
 1:3:DFF
 2:4:work
 3:48:D:/Learning/DigitalKareem/Projects/DSP48A1/DFF.v
@@ -12,8 +12,9 @@
 8:5:WIDTH
 9:3:clk
 10:1:d
-11:1:q
-12:3:rst
+11:2:en
+12:1:q
+13:3:rst
 <2
 >3
 4
@@ -23,19 +24,21 @@
 3:126:10 "scalar[47:0]" "<zin_internal>" 0 4 1 7 "integer[47:0]" "<zin_internal>" 0 10 32 47 0 7 "scalar" "<zin_internal>" 0 0 1 0 0
 <3
 >4
-e1b2f3l1.33t0C1B4P3S22E30c2p6v5F0L4T0U0p8v7F0L3T1U0;
+e1b2f3l1.34t0C1B4P3S23E31c2p6v5F0L4T0U0p8v7F0L3T1U0;
 <4
 >5
-b4@9l7knt2;
-@10l9knt3;
-@11l10knt3;
-@12l8knt2;
+b5@9l7knt2;
+@10l10knt3;
+@11l9knt2;
+@12l11knt3;
+@13l8knt2;
 <5
 >6
-b4@9l10x1t2;
-@12l10x4t2;
-@10l10x2t3;
-@11l10d1x3t3;
+b5@9l11x1t2;
+@13l11x5t2;
+@11l11x3t2;
+@10l11x2t3;
+@12l11d1x4t3;
 <6
 >7
 c0
@@ -43,8 +46,8 @@ c0
 <1
 >1
 >2
-13
-0:13:DFF_978691777
+14
+0:14:DFF_1481027748
 1:3:DFF
 2:4:work
 3:48:D:/Learning/DigitalKareem/Projects/DSP48A1/DFF.v
@@ -55,8 +58,9 @@ c0
 8:5:WIDTH
 9:3:clk
 10:1:d
-11:1:q
-12:3:rst
+11:2:en
+12:1:q
+13:3:rst
 <2
 >3
 4
@@ -66,19 +70,21 @@ c0
 3:123:10 "scalar[0:0]" "<zin_internal>" 0 4 1 7 "integer[0:0]" "<zin_internal>" 0 10 32 0 0 7 "scalar" "<zin_internal>" 0 0 1 0 0
 <3
 >4
-#1e1b2f3l1.33t0C1B4P3S22E30c2p6v5F0L4T0U0p8v7F0L3T1U0;
+#1e1b2f3l1.34t0C1B4P3S23E31c2p6v5F0L4T0U0p8v7F0L3T1U0;
 <4
 >5
-b4@9l7knt2;
-@10l9knt3;
-@11l10knt3;
-@12l8knt2;
+b5@9l7knt2;
+@10l10knt3;
+@11l9knt2;
+@12l11knt3;
+@13l8knt2;
 <5
 >6
-b4@9l10x1t2;
-@12l10x4t2;
-@10l10x2t3;
-@11l10d1x3t3;
+b5@9l11x1t2;
+@13l11x5t2;
+@11l11x3t2;
+@10l11x2t3;
+@12l11d1x4t3;
 <6
 >7
 c0
@@ -86,8 +92,8 @@ c0
 <1
 >1
 >2
-13
-0:13:DFF_442818429
+14
+0:13:DFF_934619840
 1:3:DFF
 2:4:work
 3:48:D:/Learning/DigitalKareem/Projects/DSP48A1/DFF.v
@@ -98,8 +104,9 @@ c0
 8:5:WIDTH
 9:3:clk
 10:1:d
-11:1:q
-12:3:rst
+11:2:en
+12:1:q
+13:3:rst
 <2
 >3
 4
@@ -109,19 +116,21 @@ c0
 3:126:10 "scalar[35:0]" "<zin_internal>" 0 4 1 7 "integer[35:0]" "<zin_internal>" 0 10 32 35 0 7 "scalar" "<zin_internal>" 0 0 1 0 0
 <3
 >4
-#2e1b2f3l1.33t0C1B4P3S22E30c2p6v5F0L4T0U0p8v7F0L3T1U0;
+#2e1b2f3l1.34t0C1B4P3S23E31c2p6v5F0L4T0U0p8v7F0L3T1U0;
 <4
 >5
-b4@9l7knt2;
-@10l9knt3;
-@11l10knt3;
-@12l8knt2;
+b5@9l7knt2;
+@10l10knt3;
+@11l9knt2;
+@12l11knt3;
+@13l8knt2;
 <5
 >6
-b4@9l10x1t2;
-@12l10x4t2;
-@10l10x2t3;
-@11l10d1x3t3;
+b5@9l11x1t2;
+@13l11x5t2;
+@11l11x3t2;
+@10l11x2t3;
+@12l11d1x4t3;
 <6
 >7
 c0
@@ -129,8 +138,8 @@ c0
 <1
 >1
 >2
-13
-0:14:DFF_1345496544
+14
+0:12:DFF_97495731
 1:3:DFF
 2:4:work
 3:48:D:/Learning/DigitalKareem/Projects/DSP48A1/DFF.v
@@ -141,8 +150,9 @@ c0
 8:5:WIDTH
 9:3:clk
 10:1:d
-11:1:q
-12:3:rst
+11:2:en
+12:1:q
+13:3:rst
 <2
 >3
 4
@@ -152,19 +162,21 @@ c0
 3:126:10 "scalar[17:0]" "<zin_internal>" 0 4 1 7 "integer[17:0]" "<zin_internal>" 0 10 32 17 0 7 "scalar" "<zin_internal>" 0 0 1 0 0
 <3
 >4
-#3e1b2f3l1.33t0C1B4P3S22E30c2p6v5F0L4T0U0p8v7F0L3T1U0;
+#3e1b2f3l1.34t0C1B4P3S23E31c2p6v5F0L4T0U0p8v7F0L3T1U0;
 <4
 >5
-b4@9l7knt2;
-@10l9knt3;
-@11l10knt3;
-@12l8knt2;
+b5@9l7knt2;
+@10l10knt3;
+@11l9knt2;
+@12l11knt3;
+@13l8knt2;
 <5
 >6
-b4@9l10x1t2;
-@12l10x4t2;
-@10l10x2t3;
-@11l10d1x3t3;
+b5@9l11x1t2;
+@13l11x5t2;
+@11l11x3t2;
+@10l11x2t3;
+@12l11d1x4t3;
 <6
 >7
 c0
@@ -172,8 +184,8 @@ c0
 <1
 >1
 >2
-13
-0:14:DFF_1820874867
+14
+0:13:DFF_238841845
 1:3:DFF
 2:4:work
 3:48:D:/Learning/DigitalKareem/Projects/DSP48A1/DFF.v
@@ -184,8 +196,9 @@ c0
 8:5:WIDTH
 9:3:clk
 10:1:d
-11:1:q
-12:3:rst
+11:2:en
+12:1:q
+13:3:rst
 <2
 >3
 4
@@ -195,19 +208,21 @@ c0
 3:123:10 "scalar[7:0]" "<zin_internal>" 0 4 1 7 "integer[7:0]" "<zin_internal>" 0 10 32 7 0 7 "scalar" "<zin_internal>" 0 0 1 0 0
 <3
 >4
-#4e1b2f3l1.33t0C1B4P3S22E30c2p6v5F0L4T0U0p8v7F0L3T1U0;
+#4e1b2f3l1.34t0C1B4P3S23E31c2p6v5F0L4T0U0p8v7F0L3T1U0;
 <4
 >5
-b4@9l7knt2;
-@10l9knt3;
-@11l10knt3;
-@12l8knt2;
+b5@9l7knt2;
+@10l10knt3;
+@11l9knt2;
+@12l11knt3;
+@13l8knt2;
 <5
 >6
-b4@9l10x1t2;
-@12l10x4t2;
-@10l10x2t3;
-@11l10d1x3t3;
+b5@9l11x1t2;
+@13l11x5t2;
+@11l11x3t2;
+@10l11x2t3;
+@12l11d1x4t3;
 <6
 >7
 c0
@@ -419,14 +434,14 @@ b31@41x1t4;
 <6
 >7
 c9
-#4@91i90l227x3 7 0 12;
-#3@92i89l235x3 7 0 12;
-@93i88l247x3 7 0 12;
-#3@94i87l261x3 7 0 12;
-#3@95i86l265x3 7 0 12;
-#2@96i85l280x3 7 0 12;
-#1@97i84l284x3 7 0 12;
-#1@98i83l300x3 7 0 12;
-@99i82l304x3 7 0 12;
+#4@91i90l227x3 7 0 16;
+#3@92i89l235x3 7 0 16;
+@93i88l247x3 7 0 16;
+#3@94i87l261x3 7 0 16;
+#3@95i86l265x3 7 0 16;
+#2@96i85l280x3 7 0 16;
+#1@97i84l284x3 7 0 16;
+#1@98i83l300x3 7 0 16;
+@99i82l304x3 7 0 16;
 <7
 <1

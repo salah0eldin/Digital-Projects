@@ -22,5 +22,5 @@ infact=C:/QFT_2021.1/QFT_2021.1/QFT/V2021.1/win64/share/modeltech/win64/../infac
 vhdlopt_lib=C:/QFT_2021.1/QFT_2021.1/QFT/V2021.1/win64/share/modeltech/win64/../vhdlopt_lib
 vh_ux01v_lib=C:/QFT_2021.1/QFT_2021.1/QFT/V2021.1/win64/share/modeltech/win64/../vh_ux01v_lib
 work=./work
-*RAW_COMMAND create_netlist -zdb D:/Learning/DigitalKareem/Projects/DSP48A1/lint/qcache/DB/zdb_4 -tool lint -d DSP48A1 -L work 
+*RAW_COMMAND create_netlist -zdb D:/Learning/DigitalKareem/Projects/DSP48A1/lint/qcache/DB/zdb_6 -tool lint -d DSP48A1 -L work 
 *COMMAND create_netlist 

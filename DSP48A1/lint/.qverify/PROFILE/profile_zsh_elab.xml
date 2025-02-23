@@ -115,182 +115,182 @@
 	<edge>
 		<from>1</from>
 		<to>2</to>
-		<time>37493071905</time>
+		<time>40948801820</time>
 		<mem>0</mem>
 		<calls>1</calls>
 	</edge>
 	<edge>
 		<from>2</from>
 		<to>3</to>
-		<time>50830</time>
+		<time>55784</time>
 		<mem>0</mem>
 		<calls>18</calls>
 	</edge>
 	<edge>
 		<from>2</from>
 		<to>4</to>
-		<time>1584138043</time>
+		<time>1951328728</time>
 		<mem>0</mem>
 		<calls>1</calls>
 	</edge>
 	<edge>
 		<from>4</from>
 		<to>5</to>
-		<time>5277698</time>
+		<time>4746312</time>
 		<mem>0</mem>
 		<calls>7</calls>
 	</edge>
 	<edge>
 		<from>5</from>
 		<to>6</to>
-		<time>339496</time>
+		<time>307961</time>
 		<mem>0</mem>
 		<calls>1</calls>
 	</edge>
 	<edge>
 		<from>4</from>
 		<to>7</to>
-		<time>194832</time>
+		<time>202977</time>
 		<mem>0</mem>
 		<calls>1</calls>
 	</edge>
 	<edge>
 		<from>4</from>
 		<to>8</to>
-		<time>964310427</time>
+		<time>1139861450</time>
 		<mem>0</mem>
 		<calls>1</calls>
 	</edge>
 	<edge>
 		<from>8</from>
 		<to>9</to>
-		<time>825467540</time>
+		<time>1015631041</time>
 		<mem>0</mem>
 		<calls>1</calls>
 	</edge>
 	<edge>
 		<from>9</from>
 		<to>10</to>
-		<time>67782094</time>
+		<time>77915088</time>
 		<mem>0</mem>
-		<calls>7</calls>
+		<calls>8</calls>
 	</edge>
 	<edge>
 		<from>10</from>
 		<to>11</to>
-		<time>6574810</time>
+		<time>7963466</time>
 		<mem>0</mem>
 		<calls>8</calls>
 	</edge>
 	<edge>
 		<from>13</from>
 		<to>11</to>
-		<time>51080802</time>
+		<time>65523058</time>
 		<mem>0</mem>
 		<calls>106</calls>
 	</edge>
 	<edge>
 		<from>9</from>
 		<to>12</to>
-		<time>964652</time>
+		<time>910485</time>
 		<mem>0</mem>
 		<calls>6</calls>
 	</edge>
 	<edge>
 		<from>9</from>
 		<to>13</to>
-		<time>175460078</time>
+		<time>218768495</time>
 		<mem>0</mem>
 		<calls>1</calls>
 	</edge>
 	<edge>
 		<from>13</from>
 		<to>14</to>
-		<time>25324535</time>
+		<time>27115988</time>
 		<mem>0</mem>
 		<calls>6</calls>
 	</edge>
 	<edge>
 		<from>14</from>
 		<to>15</to>
-		<time>24807899</time>
+		<time>26492586</time>
 		<mem>0</mem>
 		<calls>6</calls>
 	</edge>
 	<edge>
 		<from>15</from>
 		<to>16</to>
-		<time>117901</time>
+		<time>121543</time>
 		<mem>0</mem>
 		<calls>6</calls>
 	</edge>
 	<edge>
 		<from>15</from>
 		<to>17</to>
-		<time>8821334</time>
+		<time>9039686</time>
 		<mem>0</mem>
 		<calls>6</calls>
 	</edge>
 	<edge>
 		<from>4</from>
 		<to>18</to>
-		<time>245992728</time>
+		<time>399126599</time>
 		<mem>0</mem>
 		<calls>1</calls>
 	</edge>
 	<edge>
 		<from>4</from>
 		<to>19</to>
-		<time>5419619</time>
+		<time>5501273</time>
 		<mem>0</mem>
 		<calls>1</calls>
 	</edge>
 	<edge>
 		<from>4</from>
 		<to>20</to>
-		<time>1542470</time>
+		<time>1600088</time>
 		<mem>0</mem>
 		<calls>1</calls>
 	</edge>
 	<edge>
 		<from>4</from>
 		<to>21</to>
-		<time>17121738</time>
+		<time>20658893</time>
 		<mem>0</mem>
 		<calls>1</calls>
 	</edge>
 	<edge>
 		<from>21</from>
 		<to>22</to>
-		<time>17117128</time>
+		<time>20650937</time>
 		<mem>0</mem>
 		<calls>1</calls>
 	</edge>
 	<edge>
 		<from>22</from>
 		<to>23</to>
-		<time>11536390</time>
+		<time>13831011</time>
 		<mem>0</mem>
 		<calls>6</calls>
 	</edge>
 	<edge>
 		<from>22</from>
 		<to>24</to>
-		<time>3008131</time>
+		<time>3423001</time>
 		<mem>0</mem>
 		<calls>1</calls>
 	</edge>
 	<edge>
 		<from>22</from>
 		<to>25</to>
-		<time>892909</time>
+		<time>1355214</time>
 		<mem>0</mem>
 		<calls>1</calls>
 	</edge>
 	<edge>
 		<from>2</from>
 		<to>26</to>
-		<time>1053620</time>
+		<time>1092868</time>
 		<mem>0</mem>
 		<calls>2</calls>
 	</edge>

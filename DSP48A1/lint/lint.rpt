@@ -2,7 +2,7 @@
 Lint Check Report
 Questa Lint  Version 2021.1 4558100 win64 28-Jan-2021
 
-Timestamp            : Sun Feb 23 00:00:28 2025
+Timestamp            : Sun Feb 23 04:10:21 2025
 Description          : Report for referring checks count, check violations details, and  design information
 Design               : DSP48A1
 Database             : D:/Learning/DigitalKareem/Projects/DSP48A1/lint/lint.db
@@ -27,12 +27,12 @@ Section 1 : Check Summary
 ---------------
 
 ------------
-| Info (6) |
+| Info (9) |
 ------------
   condition_const                         : 2
   parameter_name_duplicate                : 1
   comment_not_in_english                  : 1
-  line_char_large                         : 2
+  line_char_large                         : 5
 
 ----------------
 | Resolved (0) |
@@ -53,13 +53,13 @@ Section 2 : Check Details
 
 
 ------------
-| Info (6) |
+| Info (9) |
 ------------
 
 Check: condition_const [Category: Rtl Design Style] (2)
        [Message: Condition expression is a constant. Module '<module>', File '<file>', Line '<line>'.]
 -------------------------------------------------------------------------------------------------------
-condition_const: [uninspected] Condition expression is a constant. Module 'DSP48A1', File 'D:/Learning/DigitalKareem/Projects/DSP48A1/DSP48A1.v', Line '224'. [RTL ID:242764da_00200]
+condition_const: [uninspected] Condition expression is a constant. Module 'DSP48A1', File 'D:/Learning/DigitalKareem/Projects/DSP48A1/DSP48A1.v', Line '224'. [RTL ID:fa5870fb_00200]
 
 condition_const: [uninspected] Condition expression is a constant. Module 'DSP48A1', File 'D:/Learning/DigitalKareem/Projects/DSP48A1/DSP48A1.v', Line '275'. [RTL ID:723a333_00200]
 
@@ -76,10 +76,16 @@ Check: comment_not_in_english [Category: Nomenclature Style] (1)
 comment_not_in_english: [uninspected] Comments include non-English characters. File 'D:/Learning/DigitalKareem/Projects/DSP48A1/DSP48A1.v', Line '120'.
 
 
-Check: line_char_large [Category: Rtl Design Style] (2)
+Check: line_char_large [Category: Rtl Design Style] (5)
        [Message: Line has more characters than the specified limit. Current Count '<count>', Specified Limit '<limit>', File '<file>', Line '<line>'.]
 -------------------------------------------------------------------------------------------------------------------------------------------------------
-line_char_large: [uninspected] Line has more characters than the specified limit. Current Count '112', Specified Limit '110', File 'D:/Learning/DigitalKareem/Projects/DSP48A1/DSP48A1.v', Line '291'.
+line_char_large: [uninspected] Line has more characters than the specified limit. Current Count '120', Specified Limit '110', File 'D:/Learning/DigitalKareem/Projects/DSP48A1/DSP48A1.v', Line '227'.
+
+line_char_large: [uninspected] Line has more characters than the specified limit. Current Count '111', Specified Limit '110', File 'D:/Learning/DigitalKareem/Projects/DSP48A1/DSP48A1.v', Line '239'.
+
+line_char_large: [uninspected] Line has more characters than the specified limit. Current Count '112', Specified Limit '110', File 'D:/Learning/DigitalKareem/Projects/DSP48A1/DSP48A1.v', Line '284'.
+
+line_char_large: [uninspected] Line has more characters than the specified limit. Current Count '141', Specified Limit '110', File 'D:/Learning/DigitalKareem/Projects/DSP48A1/DSP48A1.v', Line '291'.
 
 line_char_large: [uninspected] Line has more characters than the specified limit. Current Count '113', Specified Limit '110', File 'D:/Learning/DigitalKareem/Projects/DSP48A1/DSP48A1.v', Line '292'.
 

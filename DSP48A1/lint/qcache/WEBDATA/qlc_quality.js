@@ -33,7 +33,7 @@ var fileQuality = {
     "Score": 100.0,
     "Error Count": 0,
     "Warning Count": 0,
-    "Info Count": 5,
+    "Info Count": 8,
     "QualityImpacted": 0
   },
   "1": {
