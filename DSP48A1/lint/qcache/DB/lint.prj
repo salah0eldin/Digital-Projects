@@ -4,7 +4,7 @@ vfprj::set -category Design -object DESIGN1 -name CompileOrder -value {{CustomCo
 vfprj::set -category Design -object DESIGN1 -name NodeType -value DesignType -type string -description {Design Type Specification}
 vfprj::set -category Design -object DESIGN1 -name SchemaVersion -value 1 -type int -description {Design Schema Version}
 vfprj::set -category Design -object DESIGN1 -name TopName -value DSP48A1 -type string -description {Top Design Unit}
-vfprj::set -category {Design CustomCompile} -object {DESIGN1 00000001} -name Command -value {vlog {vlog D:/Learning/DigitalKareem/Projects/DSP48A1/DFF.v D:/Learning/DigitalKareem/Projects/DSP48A1/DSP48A1.v -work work}} -type stringlist -maxvalue 2 -minvalue 2 -description {Custom Compilation Command}
+vfprj::set -category {Design CustomCompile} -object {DESIGN1 00000001} -name Command -value {vlog {vlog D:/Learning/DigitalKareem/Projects/DSP48A1/DFF.v D:/Learning/DigitalKareem/Projects/DSP48A1/DSP48A1.v D:/Learning/DigitalKareem/Projects/DSP48A1/DSP48A1_tb.v -work work}} -type stringlist -maxvalue 2 -minvalue 2 -description {Custom Compilation Command}
 vfprj::set -category {Design Lib} -object {DESIGN1 work} -name LibMap -value work -type directory -description {Logical to physical library mapping}
 vfprj::set -category {Design Lib} -object {DESIGN1 work} -name NodeType -value LibraryType -type string -description {Design Library Type Specification}
 vfprj::set -category LINT -name ActiveGoal -value lint_run -type string -description {LINT Goal last executed}

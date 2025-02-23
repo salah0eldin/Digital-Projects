@@ -10,7 +10,7 @@ z2
 cModel Technology
 Z0 dD:/Learning/DigitalKareem/Projects/DSP48A1/lint
 vDFF
-Z1 !s110 1740276595
+Z1 !s110 1740283334
 !i10b 1
 !s100 E]WXF;nE<j;N;;;GcIWzJ1
 IN@zmN3DA3T2H61<HEiYc33
@@ -18,16 +18,16 @@ R0
 w1740276283
 8D:/Learning/DigitalKareem/Projects/DSP48A1/DFF.v
 FD:/Learning/DigitalKareem/Projects/DSP48A1/DFF.v
-!i122 4
+!i122 6
 L0 1 34
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 Z3 OL;L;2021.1;73
 r1
 !s85 0
 31
-Z4 !s108 1740276595.000000
-!s107 D:/Learning/DigitalKareem/Projects/DSP48A1/DSP48A1.v|D:/Learning/DigitalKareem/Projects/DSP48A1/DFF.v|
-Z5 !s90 D:/Learning/DigitalKareem/Projects/DSP48A1/DFF.v|D:/Learning/DigitalKareem/Projects/DSP48A1/DSP48A1.v|-work|work|
+Z4 !s108 1740283334.000000
+!s107 D:/Learning/DigitalKareem/Projects/DSP48A1/DSP48A1_tb.v|D:/Learning/DigitalKareem/Projects/DSP48A1/DSP48A1.v|D:/Learning/DigitalKareem/Projects/DSP48A1/DFF.v|
+Z5 !s90 D:/Learning/DigitalKareem/Projects/DSP48A1/DFF.v|D:/Learning/DigitalKareem/Projects/DSP48A1/DSP48A1.v|D:/Learning/DigitalKareem/Projects/DSP48A1/DSP48A1_tb.v|-work|work|
 !i113 0
 Z6 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 Z7 tCvgOpt 0
@@ -38,10 +38,10 @@ R1
 !s100 bQbSIX@DolibDj^nFRG4k3
 InLFOCE;`Cc>>JeQeo@>LI2
 R0
-w1740276379
+w1740282599
 8D:/Learning/DigitalKareem/Projects/DSP48A1/DSP48A1.v
 FD:/Learning/DigitalKareem/Projects/DSP48A1/DSP48A1.v
-!i122 4
+!i122 6
 L0 4 308
 R2
 R3
@@ -49,9 +49,32 @@ r1
 !s85 0
 31
 R4
-Z8 !s107 D:/Learning/DigitalKareem/Projects/DSP48A1/DSP48A1.v|D:/Learning/DigitalKareem/Projects/DSP48A1/DFF.v|
+Z8 !s107 D:/Learning/DigitalKareem/Projects/DSP48A1/DSP48A1_tb.v|D:/Learning/DigitalKareem/Projects/DSP48A1/DSP48A1.v|D:/Learning/DigitalKareem/Projects/DSP48A1/DFF.v|
 R5
 !i113 0
 R6
 R7
 n@d@s@p48@a1
+vDSP48A1_tb
+R1
+!i10b 1
+!s100 c`KQLF::b40Ti@D7NiLXl2
+I7lY_9LT<`cmAA8Q@cBo?60
+R0
+w1740283282
+8D:/Learning/DigitalKareem/Projects/DSP48A1/DSP48A1_tb.v
+FD:/Learning/DigitalKareem/Projects/DSP48A1/DSP48A1_tb.v
+!i122 6
+L0 3 161
+R2
+R3
+r1
+!s85 0
+31
+R4
+R8
+R5
+!i113 0
+R6
+R7
+n@d@s@p48@a1_tb

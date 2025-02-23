@@ -2,7 +2,7 @@
 Lint Check Report
 Questa Lint  Version 2021.1 4558100 win64 28-Jan-2021
 
-Timestamp            : Sun Feb 23 04:10:21 2025
+Timestamp            : Sun Feb 23 06:02:38 2025
 Description          : Report for referring checks count, check violations details, and  design information
 Design               : DSP48A1
 Database             : D:/Learning/DigitalKareem/Projects/DSP48A1/lint/lint.db
@@ -26,13 +26,13 @@ Section 1 : Check Summary
 | Warning (0) |
 ---------------
 
-------------
-| Info (9) |
-------------
+-------------
+| Info (11) |
+-------------
   condition_const                         : 2
   parameter_name_duplicate                : 1
   comment_not_in_english                  : 1
-  line_char_large                         : 5
+  line_char_large                         : 7
 
 ----------------
 | Resolved (0) |
@@ -52,9 +52,9 @@ Section 2 : Check Details
 ---------------
 
 
-------------
-| Info (9) |
-------------
+-------------
+| Info (11) |
+-------------
 
 Check: condition_const [Category: Rtl Design Style] (2)
        [Message: Condition expression is a constant. Module '<module>', File '<file>', Line '<line>'.]
@@ -76,18 +76,24 @@ Check: comment_not_in_english [Category: Nomenclature Style] (1)
 comment_not_in_english: [uninspected] Comments include non-English characters. File 'D:/Learning/DigitalKareem/Projects/DSP48A1/DSP48A1.v', Line '120'.
 
 
-Check: line_char_large [Category: Rtl Design Style] (5)
+Check: line_char_large [Category: Rtl Design Style] (7)
        [Message: Line has more characters than the specified limit. Current Count '<count>', Specified Limit '<limit>', File '<file>', Line '<line>'.]
 -------------------------------------------------------------------------------------------------------------------------------------------------------
-line_char_large: [uninspected] Line has more characters than the specified limit. Current Count '120', Specified Limit '110', File 'D:/Learning/DigitalKareem/Projects/DSP48A1/DSP48A1.v', Line '227'.
+line_char_large: [uninspected] Line has more characters than the specified limit. Current Count '124', Specified Limit '110', File 'D:/Learning/DigitalKareem/Projects/DSP48A1/DSP48A1.v', Line '227'.
 
-line_char_large: [uninspected] Line has more characters than the specified limit. Current Count '111', Specified Limit '110', File 'D:/Learning/DigitalKareem/Projects/DSP48A1/DSP48A1.v', Line '239'.
+line_char_large: [uninspected] Line has more characters than the specified limit. Current Count '115', Specified Limit '110', File 'D:/Learning/DigitalKareem/Projects/DSP48A1/DSP48A1.v', Line '239'.
 
-line_char_large: [uninspected] Line has more characters than the specified limit. Current Count '112', Specified Limit '110', File 'D:/Learning/DigitalKareem/Projects/DSP48A1/DSP48A1.v', Line '284'.
+line_char_large: [uninspected] Line has more characters than the specified limit. Current Count '111', Specified Limit '110', File 'D:/Learning/DigitalKareem/Projects/DSP48A1/DSP48A1.v', Line '243'.
+
+line_char_large: [uninspected] Line has more characters than the specified limit. Current Count '114', Specified Limit '110', File 'D:/Learning/DigitalKareem/Projects/DSP48A1/DSP48A1.v', Line '280'.
+    1 more occurrence at: line 300.
+
+line_char_large: [uninspected] Line has more characters than the specified limit. Current Count '116', Specified Limit '110', File 'D:/Learning/DigitalKareem/Projects/DSP48A1/DSP48A1.v', Line '284'.
 
 line_char_large: [uninspected] Line has more characters than the specified limit. Current Count '141', Specified Limit '110', File 'D:/Learning/DigitalKareem/Projects/DSP48A1/DSP48A1.v', Line '291'.
 
 line_char_large: [uninspected] Line has more characters than the specified limit. Current Count '113', Specified Limit '110', File 'D:/Learning/DigitalKareem/Projects/DSP48A1/DSP48A1.v', Line '292'.
+    1 more occurrence at: line 304.
 
 
 

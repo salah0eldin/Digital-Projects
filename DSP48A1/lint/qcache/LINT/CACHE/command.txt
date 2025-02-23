@@ -20,6 +20,6 @@ C:\QFT_2021.1\QFT_2021.1\QFT\V2021.1\win64\bin\qverifyek.exe
 
 Command: qlc_status_update
 Command Arguments:
-    -zdb D:/Learning/DigitalKareem/Projects/DSP48A1/lint/qcache/DB/zdb_7
+    -zdb D:/Learning/DigitalKareem/Projects/DSP48A1/lint/qcache/DB/zdb_11
     -db D:/Learning/DigitalKareem/Projects/DSP48A1/lint/lint.db
 

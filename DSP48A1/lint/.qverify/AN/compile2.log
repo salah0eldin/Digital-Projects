@@ -1,19 +1,20 @@
 QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
-Start time: 04:09:55 on Feb 23,2025
-vlog D:/Learning/DigitalKareem/Projects/DSP48A1/DFF.v D:/Learning/DigitalKareem/Projects/DSP48A1/DSP48A1.v -work work 
+Start time: 06:02:14 on Feb 23,2025
+vlog D:/Learning/DigitalKareem/Projects/DSP48A1/DFF.v D:/Learning/DigitalKareem/Projects/DSP48A1/DSP48A1.v D:/Learning/DigitalKareem/Projects/DSP48A1/DSP48A1_tb.v -work work 
 -- Compiling module DFF
 -- Compiling module DSP48A1
+-- Compiling module DSP48A1_tb
 
 Top level modules:
-	DSP48A1
-End time: 04:09:55 on Feb 23,2025, Elapsed time: 0:00:00
+	DSP48A1_tb
+End time: 06:02:14 on Feb 23,2025, Elapsed time: 0:00:00
 Errors: 0, Warnings: 0
-log created Sun Feb 23 04:09:56 2025 by dell on Salah-Eldin-LAP
+log created Sun Feb 23 06:02:15 2025 by dell on Salah-Eldin-LAP
 
 
 Command: netlist elaborate
 Command arguments:
-    -zdb D:/Learning/DigitalKareem/Projects/DSP48A1/lint/qcache/DB/zdb_6
+    -zdb D:/Learning/DigitalKareem/Projects/DSP48A1/lint/qcache/DB/zdb_10
     -tool lint
     -d DSP48A1
     -L work
@@ -71,15 +72,15 @@ Info    : Unnamed block inside generate statement.  File 'D:/Learning/DigitalKar
 Lint Stage-2  83% complete (5 out of 6 modules checked) [Total Progress -  20%]
 Optimized design name is zi_opt_def_523162666_1
 Lint Stage-2 100% complete (6 out of 6 modules checked) [Total Progress -  23%]
-End of log Sun Feb 23 04:10:08 2025
+End of log Sun Feb 23 06:02:25 2025
 
 
-log created Sun Feb 23 04:10:11 2025 by dell on Salah-Eldin-LAP
+log created Sun Feb 23 06:02:28 2025 by dell on Salah-Eldin-LAP
 
 
 Command: netlist create
 Command arguments:
-    -zdb D:/Learning/DigitalKareem/Projects/DSP48A1/lint/qcache/DB/zdb_6
+    -zdb D:/Learning/DigitalKareem/Projects/DSP48A1/lint/qcache/DB/zdb_10
     -tool lint
     -d DSP48A1
     -L work
@@ -115,12 +116,12 @@ Lint Stage-5  80% complete [Total Progress -  97%]
 Lint Stage-5 100% complete [Total Progress - 100%]
 
 Lint Checking Completed
-##Time Taken (Synthesis) = 2769.000000 ticks = 2.769000 secs
+##Time Taken (Synthesis) = 2836.000000 ticks = 2.836000 secs
 
-End of log Sun Feb 23 04:10:21 2025
+End of log Sun Feb 23 06:02:38 2025
 
 
-log created Sun Feb 23 04:10:24 2025 by dell on Salah-Eldin-LAP
+log created Sun Feb 23 06:02:41 2025 by dell on Salah-Eldin-LAP
 
 
 
@@ -132,7 +133,7 @@ Count  Type     Message ID         Summary
 ---------------------------------------------------------------------------
     9  Info     parser-235         Unnamed block inside generate statement.
 
-Final Process Statistics: Max memory 276MB, CPU time 28s, Total time 29s
-End of log Sun Feb 23 04:10:31 2025
+Final Process Statistics: Max memory 276MB, CPU time 27s, Total time 28s
+End of log Sun Feb 23 06:02:48 2025
 
 
