@@ -221,7 +221,7 @@ module DSP48A1 #(
 
     //// ! Implementation
     // * 01: Input Stage
-    assign B_0 = (B_INPUT == "DIRECT") ? B : BCIN;
+    assign B_0 = (B_INPUT == "DIRECT") ? B : (B_INPUT == "CASCADE") ? BCIN : 0;
     generate
         if(OPMODEREG)
             DFF #(.WIDTH(WIDTH_1), .RSTTYPE(RSTTYPE)) DFF_OPMODE (.d(OPMODE), .clk(CLK), .rst(RSTOPMODE), .q(OPMODE_O));
