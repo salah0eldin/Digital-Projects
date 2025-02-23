@@ -1,4 +1,4 @@
-// % The  Spartan-6  family  offers  a  high  ratio  of  DSP48A1  slices  to  logic,  
+// % The  Spartan-6  family  offers  a  high  ratio  of  DSP48A1  slices  to  logic,
 // % making  it  ideal  for  math-intensive applications. Design DSP48A1 slice of the spartan6 FPGAs.
 
 module DSP48A1 #(
@@ -288,7 +288,7 @@ module DSP48A1 #(
     assign M = M_O;
 
     // * 08: Eighth Stage
-    assign X = (OPMODE_O[1:0] == 0) ? {WIDTH_4{1'b0}} : (OPMODE_O[1:0] == 1) ? M_O : (OPMODE_O[1:0] == 2) ? P : D_A_B;
+    assign X = (OPMODE_O[1:0] == 0) ? {WIDTH_4{1'b0}} : (OPMODE_O[1:0] == 1) ? {{(WIDTH_4-WIDTH_3){1'b0}}, M_O} : (OPMODE_O[1:0] == 2) ? P : D_A_B;
     assign Z = (OPMODE_O[3:2] == 0) ? {WIDTH_4{1'b0}} : (OPMODE_O[3:2] == 1) ? PCIN : (OPMODE_O[3:2] == 2) ? P : C_1;
 
     // * 09: Post-Adder/Subtracter
