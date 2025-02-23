@@ -205,6 +205,7 @@ module DSP48A1 #(
     wire CYI;
 
     // * 07: Seventh Stage
+    wire [WIDTH_3-1:0] M_B
     wire CYI_O;
 
     // * 08: Eighth Stage
@@ -248,11 +249,13 @@ module DSP48A1 #(
     assign CYI = (CARRYINSEL == "OPMODE5") ? OPMODE[5] : (CARRYINSEL == "CARRYIN") ? CARRYIN: 1'b0;
 
     // * 07: Seventh Stage
-    DFF #(.WIDTH(WIDTH_3), .RSTTYPE(RSTTYPE), .REGEN(MREG)) DFF_M_O (.d(B1_Mul_A1), .clk(CLK), .rst(RSTM), .en(CEM), .q(M));
+    DFF #(.WIDTH(WIDTH_3), .RSTTYPE(RSTTYPE), .REGEN(MREG)) DFF_M_O (.d(B1_Mul_A1), .clk(CLK), .rst(RSTM), .en(CEM), .q(M_B));
     DFF #(.WIDTH(1), .RSTTYPE(RSTTYPE), .REGEN(CARRYINREG)) DFF_CYI_O (.d(CYI), .clk(CLK), .rst(RSTCARRYIN), .en(CECARRYIN), .q(CYI_O));
 
+    (* keep *) assign M = M_B;
+        
     // * 08: Eighth Stage
-    assign X = (OPMODE_O[1:0] == 0) ? {WIDTH_4{1'b0}} : (OPMODE_O[1:0] == 1) ? {{(WIDTH_4-WIDTH_3){1'b0}}, M} : (OPMODE_O[1:0] == 2) ? P : D_A_B;
+        assign X = (OPMODE_O[1:0] == 0) ? {WIDTH_4{1'b0}} : (OPMODE_O[1:0] == 1) ? {{(WIDTH_4-WIDTH_3){1'b0}}, M_B} : (OPMODE_O[1:0] == 2) ? P : D_A_B;
     assign Z = (OPMODE_O[3:2] == 0) ? {WIDTH_4{1'b0}} : (OPMODE_O[3:2] == 1) ? PCIN : (OPMODE_O[3:2] == 2) ? P : C_1;
 
     // * 09: Post-Adder/Subtracter
