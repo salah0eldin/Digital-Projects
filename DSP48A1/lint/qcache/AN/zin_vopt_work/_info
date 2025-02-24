@@ -1,0 +1,22 @@
+m255
+K4
+z2
+!s99 nomlopt
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/Learning/DigitalKareem/Projects/DSP48A1/lint
+Tzi_opt_def_523162666_1
+!s110 1740423294
+VIk6omRgUOUFhYnI8;0f``1
+09 7 4 z0in_work DSP48A1 fast 0
+!s96 mlvalmap
+!s102 +cover=f
+!s124 OEM100
+o-suppress 143 -nologo -noclknetalias -nolock -noOptProcessWaits -noinstaliasopt -pslallowseverity -suppress 153 -suppress 3053 -suppress 8884 -suppress 1491 -suppress 8885 -suppress 1127 -suppress 7033 -suppress 3838 -suppress 12003 -suppress 3054 -suppress 2734 -0in_enable_questa_fsm -suppress 2071 -suppress 13408 -suppress 2108 -suppress 2250 -suppress 1272 +cover=f +acc=a -0in_elab -mlvalmap -opt=-optStmt -opt=-optExpr -noStaticExprOpt -L work -work work -mixedansiports -disable_type_sharing
+tCvgOpt 0
+nzi_opt_def_523162666_1
+OL;O;2021.1;73
