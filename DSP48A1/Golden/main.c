@@ -8,7 +8,7 @@
 
 int main()
 {
-    FILE *fp = fopen("../golden_model.txt", "w");
+    FILE *fp = fopen("golden_model.txt", "w");
     if (!fp)
     {
         printf("Error opening file!\n");
@@ -22,19 +22,19 @@ int main()
 
     for (int i = 0; i < TEST_CASES; i++)
     {
-        long long A = rand() % (1 << 18);
-        long long B = rand() % (1 << 18);
-        long long D = rand() % (1 << 18);
-        long long C = ((long long)rand() << 16) | rand(); // Generate a 48-bit number
-        int OPMODE = rand() % (1 << 8);
-        long long BCIN = rand() % (1 << 18);
-        long long PCIN = ((long long)rand() << 16) | rand();
-        int CARRYIN = rand() % 2;
+        sig.A = rand() % ((long)1 << 18);
+        sig.B = rand() % ((long)1 << 18);
+        sig.D = rand() % ((long)1 << 18);
+        sig.C = ((long long)rand() << 16) | rand(); // Generate a 48-bit number
+        sig.OPMODE = rand();
+        sig.BCIN = rand() % ((long)1 << 18);
+        sig.PCIN = ((long long)rand() << 16) | rand();
+        sig.CARRYIN = rand() % 2;
 
-        process(&cfg, &sig, A, B, C, D, BCIN, OPMODE, PCIN, CARRYIN);
+        process(&cfg, &sig);
 
-        fprintf(fp, "%lld %lld %lld %lld %lld %d %lld %d -> %lld %lld %d %lld\n",
-                A, B, C, D, BCIN, OPMODE, PCIN, CARRYIN, sig.BCOUT, sig.M, sig.CARRYOUT, sig.P);
+        fprintf(fp, "%lx %lx %llx %lx %lx %x %llx %x -> %lx %llx %x %llx\n",
+                sig.A, sig.B, sig.C, sig.D, sig.BCIN, sig.OPMODE, sig.PCIN, sig.CARRYIN, sig.BCOUT, sig.M, sig.CARRYOUT, sig.P);
     }
 
     fclose(fp);

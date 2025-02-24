@@ -1,7 +1,7 @@
 var lintRunProgress = {
     "Status": "Finalizing results",
     "Progress": "99",
-    "ModuleCount": "6",
+    "ModuleCount": "7",
     "Pre Design Elaboration": {
         "status": "Completed",
         "progress": "100",
@@ -14,7 +14,7 @@ var lintRunProgress = {
         "status": "Completed",
         "progress": "100",
         "enabledChecks": "66",
-        "completeCount": "6",
+        "completeCount": "7",
         "type": "modules",
         "log": "Checks completed (66)"
     },

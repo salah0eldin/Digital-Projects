@@ -121,14 +121,14 @@ module DSP48A1_tb;
         C = 0;
         PCIN = 0;
         CARRYIN = 0;
-        CEA = 0;
-        CEB = 0;
-        CEC = 0;
-        CECARRYIN = 0;
-        CED = 0;
-        CEM = 0;
-        CEOPMODE = 0;
-        CEP = 0;
+        CEA = 1;
+        CEB = 1;
+        CEC = 1;
+        CECARRYIN = 1;
+        CED = 1;
+        CEM = 1;
+        CEOPMODE = 1;
+        CEP = 1;
         RSTA = 0;
         RSTB = 0;
         RSTC = 0;
@@ -148,7 +148,6 @@ module DSP48A1_tb;
         RSTOPMODE = 1;
         RSTP = 1;
         @(negedge CLK);
-        @(negedge CLK);
         RSTA = 0;
         RSTB = 0;
         RSTC = 0;
@@ -159,7 +158,7 @@ module DSP48A1_tb;
         RSTP = 0;
 
         // Open the golden model file
-        file = $fopen("../golden_model.txt", "r");
+        file = $fopen("../Golden/golden_model.txt", "r");
         if (file == 0) begin
             $display("Failed to open golden model file.");
             $finish;
@@ -167,12 +166,11 @@ module DSP48A1_tb;
 
         // Read and apply test vectors
         while (!$feof(file)) begin
-            status = $fscanf(file, "%d %d %h %d %d %d %h %d -> %d %h %d %h\n",
+            status = $fscanf(file, "%h %h %h %h %h %h %h %h -> %h %h %h %h\n",
                              A, B, C, D, BCIN, OPMODE, PCIN, CARRYIN, golden_model_BCOUT, golden_model_M, golden_model_CARRYOUT, golden_model_P);
 
-
             if (status != 12) begin
-                $display("ERROR: fscanf failed or incomplete data read.");
+                $display("Failed: ERROR: fscanf failed or incomplete data read.");
                 $finish;
             end
 
@@ -180,12 +178,12 @@ module DSP48A1_tb;
 
             // Compare expected and actual results
             if (golden_model_BCOUT !== BCOUT || golden_model_M !== M || golden_model_CARRYOUT !== CARRYOUT || golden_model_P !== P) begin
-                $display("Failed at A=%d B=%d C=%d D=%d BCIN=%d OPMODE=%b PCIN=%d CARRYIN=%d: Expected BCOUT= %d, Got %d | Expected M=%d, Got %d | Expected CARRYOUT=%d, Got %d | Expected P=%d, Got %d",
+                $display("Failed at A=%h B=%h C=%h D=%h BCIN=%h OPMODE=%h PCIN=%h CARRYIN=%h: Expected BCOUT= %h, Got %h | Expected M=%h, Got %h | Expected CARRYOUT=%h, Got %h | Expected P=%h, Got %h",
                          A, B, C, D, BCIN, OPMODE, PCIN, CARRYIN, golden_model_BCOUT, BCOUT, golden_model_M, M, golden_model_CARRYOUT, CARRYOUT, golden_model_P, P);
             end
         end
 
-        $fclose(file);
+        // $fclose(file);
         $finish;
     end
 

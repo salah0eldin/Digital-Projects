@@ -205,7 +205,7 @@ module DSP48A1 #(
     wire CYI;
 
     // * 07: Seventh Stage
-    wire [WIDTH_3-1:0] M_B
+    wire [WIDTH_3-1:0] M_B;
     wire CYI_O;
 
     // * 08: Eighth Stage
@@ -222,14 +222,14 @@ module DSP48A1 #(
     //// ! Implementation
     // * 01: Input Stage
     assign B_0 = (B_INPUT == "DIRECT") ? B : (B_INPUT == "CASCADE") ? BCIN : 0;
-        
+
     DFF #(.WIDTH(WIDTH_1), .RSTTYPE(RSTTYPE), .REGEN(OPMODEREG)) DFF_OPMODE (.d(OPMODE), .clk(CLK), .rst(RSTOPMODE), .en(CEOPMODE), .q(OPMODE_O));
 
     // * 02: Second Stage
-    DFF #(.WIDTH(WIDTH_2), .RSTTYPE(RSTTYPE), .REGEN(DREG)) DFF_D_1 (.d(D), .clk(CLK), .rst(RSTD), .en(CED), .q(D_1));
-    DFF #(.WIDTH(WIDTH_2), .RSTTYPE(RSTTYPE), .REGEN(B0REG)) DFF_B_1 (.d(B_0), .clk(CLK), .rst(RSTB), .en(CEB), .q(B_0_O));
-    DFF #(.WIDTH(WIDTH_2), .RSTTYPE(RSTTYPE), .REGEN(A0REG)) DFF_A_1 (.d(A), .clk(CLK), .rst(RSTA), .en(CEA), .q(A_1));
-    DFF #(.WIDTH(WIDTH_4), .RSTTYPE(RSTTYPE), .REGEN(CREG)) DFF_C_1 (.d(C), .clk(CLK), .rst(RSTC), .en(CEC), .q(C_1));
+    DFF #(.WIDTH(WIDTH_2), .RSTTYPE(RSTTYPE), .REGEN(DREG)) DFF_D (.d(D), .clk(CLK), .rst(RSTD), .en(CED), .q(D_1));
+    DFF #(.WIDTH(WIDTH_2), .RSTTYPE(RSTTYPE), .REGEN(B0REG)) DFF_B_0 (.d(B_0), .clk(CLK), .rst(RSTB), .en(CEB), .q(B_0_O));
+    DFF #(.WIDTH(WIDTH_2), .RSTTYPE(RSTTYPE), .REGEN(A0REG)) DFF_A_0 (.d(A), .clk(CLK), .rst(RSTA), .en(CEA), .q(A_1));
+    DFF #(.WIDTH(WIDTH_4), .RSTTYPE(RSTTYPE), .REGEN(CREG)) DFF_C (.d(C), .clk(CLK), .rst(RSTC), .en(CEC), .q(C_1));
 
     // * 03: Pre-Adder/Subtracter
     assign D_PAS_B = (OPMODE_O[6]) ? D_1 - B_0_O : D_1 + B_0_O;
@@ -253,13 +253,13 @@ module DSP48A1 #(
     DFF #(.WIDTH(1), .RSTTYPE(RSTTYPE), .REGEN(CARRYINREG)) DFF_CYI_O (.d(CYI), .clk(CLK), .rst(RSTCARRYIN), .en(CECARRYIN), .q(CYI_O));
 
     (* keep *) assign M = M_B;
-        
+
     // * 08: Eighth Stage
-        assign X = (OPMODE_O[1:0] == 0) ? {WIDTH_4{1'b0}} : (OPMODE_O[1:0] == 1) ? {{(WIDTH_4-WIDTH_3){1'b0}}, M_B} : (OPMODE_O[1:0] == 2) ? P : D_A_B;
+    assign X = (OPMODE_O[1:0] == 0) ? {WIDTH_4{1'b0}} : (OPMODE_O[1:0] == 1) ? {{(WIDTH_4-WIDTH_3){1'b0}}, M_B} : (OPMODE_O[1:0] == 2) ? P : D_A_B;
     assign Z = (OPMODE_O[3:2] == 0) ? {WIDTH_4{1'b0}} : (OPMODE_O[3:2] == 1) ? PCIN : (OPMODE_O[3:2] == 2) ? P : C_1;
 
     // * 09: Post-Adder/Subtracter
-    assign {CYO, X_Z_CIN_OP} = (OPMODE_O[7]) ? Z - (X + CYI_O) : X + Z + CYI_O;
+    assign {CYO, X_Z_CIN_OP} = (OPMODE_O[7]) ? {1'b0, Z} - ({1'b0, X} + CYI_O) : {1'b0, X} + {1'b0, Z} + CYI_O;
 
     // * 10: Output Stage
     DFF #(.WIDTH(1), .RSTTYPE(RSTTYPE), .REGEN(CARRYOUTREG)) DFF_CYO (.d(CYO), .clk(CLK), .rst(RSTCARRYIN), .en(CECARRYIN), .q(CARRYOUT));
