@@ -1,0 +1,4 @@
+./DSP48A1/lint/.qverify
+./DSP48A1/lint/qcache
+./DSP48A1/lint/work
+./DSP48A1/sim/work
