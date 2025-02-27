@@ -104,6 +104,7 @@ module DSP48A1_tb;
 
     integer file;
     integer status;
+    integer i;
 
     // Clock generation
     initial begin
@@ -157,6 +158,7 @@ module DSP48A1_tb;
         RSTOPMODE = 0;
         RSTP = 0;
 
+        i = 0;
         // Open the golden model file
         file = $fopen("../Golden/golden_model.txt", "r");
         if (file == 0) begin
@@ -166,7 +168,7 @@ module DSP48A1_tb;
 
         // Read and apply test vectors
         while (!$feof(file)) begin
-            status = $fscanf(file, "%h %h %h %h %h %h %h %h -> %h %h %h %h\n",
+            status = $fscanf(file, "%b %b %b %b %b %b %b %b -> %b %b %b %b\n",
                              A, B, C, D, BCIN, OPMODE, PCIN, CARRYIN, golden_model_BCOUT, golden_model_M, golden_model_CARRYOUT, golden_model_P);
 
             if (status != 12) begin
@@ -174,13 +176,19 @@ module DSP48A1_tb;
                 $finish;
             end
 
-            repeat(4) @(negedge CLK); // Wait to apply inputs
+            i = i + 1;
+            if(i>4)
+                i = 1;
 
             // Compare expected and actual results
             if (golden_model_BCOUT !== BCOUT || golden_model_M !== M || golden_model_CARRYOUT !== CARRYOUT || golden_model_P !== P) begin
-                $display("Failed at A=%h B=%h C=%h D=%h BCIN=%h OPMODE=%h PCIN=%h CARRYIN=%h: Expected BCOUT= %h, Got %h | Expected M=%h, Got %h | Expected CARRYOUT=%h, Got %h | Expected P=%h, Got %h",
+                $display("$d\n", i);
+                $display("Failed at A=%h B=%h C=%h D=%h BCIN=%h OPMODE=%b PCIN=%h CARRYIN=%h: Expected BCOUT= %h, Got %h | Expected M=%h, Got %h | Expected CARRYOUT=%h, Got %h | Expected P=%h, Got %h",
                          A, B, C, D, BCIN, OPMODE, PCIN, CARRYIN, golden_model_BCOUT, BCOUT, golden_model_M, M, golden_model_CARRYOUT, CARRYOUT, golden_model_P, P);
             end
+
+            repeat(1) @(negedge CLK); 
+
         end
 
         // $fclose(file);

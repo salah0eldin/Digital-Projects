@@ -63,24 +63,24 @@ module DSP48A1 #(
          * * 18-bit data input to multiplier, and optionally to post-
          * * adder/subtracter depending on the value of OPMODE[1:0].
          */
-        input [WIDTH_2-1:0] A,
+        input signed [WIDTH_2-1:0] A,
 
         /**
          * * 18-bit data input to pre-adder/subtracter, to multiplier depending on 
          * * OPMODE[4], or to post-adder/subtracter depending on OPMODE[1:0]. 
          */ 
-        input [WIDTH_2-1:0] B,
+        input signed [WIDTH_2-1:0] B,
 
         /**
          * * 48-bit data input to post-adder/subtracter.
          */
-        input [WIDTH_4-1:0] C,
+        input signed [WIDTH_4-1:0] C,
 
         /**
          * * 18-bit data input to pre-adder/subtracter. D[11:0] are concatenated 
-         * * with A and B and optionally sent to post-adder/subtracter depending on the value of OPMODE[1:0].
+         * * with A and B and optionally sent to post-adder/subtracter depending on the value of OPMODE[1:0]. 
          */
-        input [WIDTH_2-1:0] D,
+        input signed [WIDTH_2-1:0] D,
 
         /**
          * * carry input to the post-adder/subtracter.
@@ -91,13 +91,13 @@ module DSP48A1 #(
          * * 36-bit buffered multiplier data output, routable to the FPGA logic. 
          * * It is either the output of the M register (MREG = 1) or the direct output of the multiplier (MREG = 0). 
          */
-        output [WIDTH_3-1:0] M,
+        output signed [WIDTH_3-1:0] M,
 
         /**
          * * Primary data output from the post-adder/subtracter. 
          * * It is either the output of the P register (PREG = 1) or the direct output of the post-adder/subtracter (PREG = 0). 
          */
-        output [WIDTH_4-1:0] P,
+        output signed [WIDTH_4-1:0] P,
 
         /**
          * * Cascade carry out signal from post-adder/subtracter. 
@@ -172,48 +172,48 @@ module DSP48A1 #(
         input RSTP,         // * Reset for the P output registers (PREG = 1).
 
         //// ! Cascade Ports:
-        input [WIDTH_2-1:0] BCIN,   // * Cascade input for Port B.
-        output [WIDTH_2-1:0] BCOUT, // * Cascade output for Port B.
-        input [WIDTH_4-1:0] PCIN,   // * Cascade input for Port P.
-        output [WIDTH_4-1:0] PCOUT  // * Cascade output for Port P.
+        input signed [WIDTH_2-1:0] BCIN,   // * Cascade input for Port B.
+        output signed [WIDTH_2-1:0] BCOUT, // * Cascade output for Port B.
+        input signed [WIDTH_4-1:0] PCIN,   // * Cascade input for Port P.
+        output signed [WIDTH_4-1:0] PCOUT  // * Cascade output for Port P.
     );
 
     //// ! Internal Signals:
     // * 01: Input Stage
-    wire [WIDTH_2-1:0] B_0;
+    wire signed [WIDTH_2-1:0] B_0;
     wire [WIDTH_1-1:0] OPMODE_O;
 
     // * 02: Second Stage
-    wire [WIDTH_2-1:0] D_1;
-    wire [WIDTH_2-1:0] B_0_O;
-    wire [WIDTH_2-1:0] A_1;
-    wire [WIDTH_4-1:0] C_1;
+    wire signed [WIDTH_2-1:0] D_1;
+    wire signed [WIDTH_2-1:0] B_0_O;
+    wire signed [WIDTH_2-1:0] A_1;
+    wire signed [WIDTH_4-1:0] C_1;
 
     // * 03: Pre-Adder/Subtracter
-    wire [WIDTH_2-1:0] D_PAS_B; // ? D + B or D - B (OPMODE[6])
+    wire signed [WIDTH_2-1:0] D_PAS_B; // ? D + B or D - B (OPMODE[6])
 
     // * 04: Fourth Stage
-    wire [WIDTH_2-1:0] B_1;
+    wire signed [WIDTH_2-1:0] B_1;
 
     // * 05: Fifth Stage
-    wire [WIDTH_4-1:0] D_A_B; // ? {D_1[11:0], A_1_O, B_1_O}
-    wire [WIDTH_2-1:0] B_1_O;
-    wire [WIDTH_2-1:0] A_1_O;
+    wire signed [WIDTH_4-1:0] D_A_B; // ? {D_1[11:0], A_1_O, B_1_O}
+    wire signed [WIDTH_2-1:0] B_1_O;
+    wire signed [WIDTH_2-1:0] A_1_O;
 
     // * 06: Multiplier
-    wire [WIDTH_3-1:0] B1_Mul_A1;
+    wire signed [WIDTH_3-1:0] B1_Mul_A1;
     wire CYI;
 
     // * 07: Seventh Stage
-    wire [WIDTH_3-1:0] M_B;
+    wire signed [WIDTH_3-1:0] M_B;
     wire CYI_O;
 
     // * 08: Eighth Stage
-    wire [WIDTH_4-1:0] X;
-    wire [WIDTH_4-1:0] Z;
+    wire signed [WIDTH_4-1:0] X;
+    wire signed [WIDTH_4-1:0] Z;
 
     // * 09: Post-Adder/Subtracter
-    wire [WIDTH_4-1:0] X_Z_CIN_OP; // ? X + Z + CIN or Z - (X + CIN) (OPMODE[7])
+    wire signed [WIDTH_4-1:0] X_Z_CIN_OP; // ? X + Z + CIN or Z - (X + CIN) (OPMODE[7])
     wire CYO;
 
     // * 10: Output Stage
@@ -246,6 +246,7 @@ module DSP48A1 #(
 
     // * 06: Multiplier
     assign B1_Mul_A1 = B_1_O * A_1_O;
+
     assign CYI = (CARRYINSEL == "OPMODE5") ? OPMODE[5] : (CARRYINSEL == "CARRYIN") ? CARRYIN: 1'b0;
 
     // * 07: Seventh Stage
@@ -255,11 +256,20 @@ module DSP48A1 #(
     (* keep *) assign M = M_B;
 
     // * 08: Eighth Stage
-    assign X = (OPMODE_O[1:0] == 0) ? {WIDTH_4{1'b0}} : (OPMODE_O[1:0] == 1) ? {{(WIDTH_4-WIDTH_3){1'b0}}, M_B} : (OPMODE_O[1:0] == 2) ? P : D_A_B;
-    assign Z = (OPMODE_O[3:2] == 0) ? {WIDTH_4{1'b0}} : (OPMODE_O[3:2] == 1) ? PCIN : (OPMODE_O[3:2] == 2) ? P : C_1;
+    assign X = (OPMODE_O[1:0] == 0) ? {WIDTH_4{1'b0}} :
+           (OPMODE_O[1:0] == 1) ? {{(WIDTH_4-WIDTH_3){1'b0}}, M_B} :
+           (OPMODE_O[1:0] == 2) ? P :
+           D_A_B;
+
+    assign Z = (OPMODE_O[3:2] == 0) ? {WIDTH_4{1'b0}} :
+           (OPMODE_O[3:2] == 1) ? PCIN :
+           (OPMODE_O[3:2] == 2) ? P :
+           C_1;
 
     // * 09: Post-Adder/Subtracter
-    assign {CYO, X_Z_CIN_OP} = (OPMODE_O[7]) ? {1'b0, Z} - ({1'b0, X} + CYI_O) : {1'b0, X} + {1'b0, Z} + CYI_O;
+    assign {CYO, X_Z_CIN_OP} = (OPMODE_O[1:0] == 0) ? {1'b0, Z} :
+           (OPMODE_O[3:2] == 0) ? {1'b0, X} :
+           (OPMODE_O[7]) ? Z - X - CYI_O : Z + X + CYI_O;
 
     // * 10: Output Stage
     DFF #(.WIDTH(1), .RSTTYPE(RSTTYPE), .REGEN(CARRYOUTREG)) DFF_CYO (.d(CYO), .clk(CLK), .rst(RSTCARRYIN), .en(CECARRYIN), .q(CARRYOUT));

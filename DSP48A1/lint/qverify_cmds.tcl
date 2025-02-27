@@ -10,4 +10,3 @@ configure output directory D:/Learning/DigitalKareem/Projects/DSP48A1/lint
 clear directives
 lint methodology soc -goal start
 lint run -d DSP48A1 -L work
-clear directives
