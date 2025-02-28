@@ -1,0 +1,3 @@
+1_golden_model_A_B_BCIN_C_CARRYIN_D_OPMODE_PCIN_.txt
+2_golden_model_A_B_BCIN_C_D_.txt
+3_golden_model_A_B_BCIN_C_D_.txt

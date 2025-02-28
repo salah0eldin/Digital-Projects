@@ -17,7 +17,7 @@ void DSP48A1_clock_cycle(DSP48A1_State *state, DSP48A1_State *prev)
     state->C_reg = prev->C;
     state->OPMODE_reg = prev->OPMODE;
 
-    state->B_reg = (prev->OPMODE_reg & (1 << 4)) ? ((prev->OPMODE_reg  & (1 << 6)) ? prev->D_reg - prev->B_0_wire : prev->D_reg + prev->B_0_wire) : prev->B_0_wire;
+    state->B_reg = (prev->OPMODE_reg & (1 << 4)) ? ((prev->OPMODE_reg & (1 << 6)) ? prev->D_reg - prev->B_0_wire : prev->D_reg + prev->B_0_wire) : prev->B_0_wire;
 
     state->A_reg = prev->A;
 
@@ -25,11 +25,11 @@ void DSP48A1_clock_cycle(DSP48A1_State *state, DSP48A1_State *prev)
 
     // state->M = (uint64_t)prev->B_1 * (uint64_t)prev->A_1;
     // Ensure B_1 and A_1 are correctly sign-extended
-    int64_t b_val = prev->B_reg; // Assuming B_1 is already sign-extended
-    int64_t a_val = prev->A_reg; // Assuming A_1 is already sign-extended
+    uint64_t b_val = prev->B_reg; // Assuming B_1 is already sign-extended
+    uint64_t a_val = prev->A_reg; // Assuming A_1 is already sign-extended
 
     // Perform a signed multiplication
-    int64_t product = b_val * a_val;
+    uint64_t product = b_val * a_val;
 
     // Mask the result to fit into a 36-bit signed field
     state->M = product & MASK_36;
@@ -38,63 +38,63 @@ void DSP48A1_clock_cycle(DSP48A1_State *state, DSP48A1_State *prev)
 #if CARRYINSEL == 1
     state->CARRYIN_1 = prev->CARRYIN;
 #elif CARRYINSEL == 0
-    state->CARRYIN_reg = (prev->OPMODE_reg & (1 << 5)) ? 1 : 0;
+    prev->CARRYIN_reg = (prev->OPMODE_reg & (1 << 5)) ? 1 : 0;
 #else
     state->CARRYIN_1 = 0;
 #endif
 
     // X input selection based on OPMODE[1:0]
-    switch (state->OPMODE_reg & 0x03)
+    switch (prev->OPMODE_reg & 0x03)
     {
     case 0:
-        state->X = 0;
+        prev->X = 0;
         break;
     case 1:
-        state->X = (uint64_t)state->M;
+        prev->X = (uint64_t)prev->M;
         break;
     case 2:
-        state->X = state->P;
+        prev->X = prev->P;
         break;
     case 3:
-        state->X = (((uint64_t)state->D_reg << 36) & 0x0FFF000000000) | (((uint64_t)state->A_reg << 18) & 0x00FFFFC0000) | ((uint64_t)state->B_reg & 0x03FFFF);
+        prev->X = (((uint64_t)prev->D_reg << 36) & 0x0FFF000000000) | (((uint64_t)prev->A_reg << 18) & 0x00FFFFC0000) | ((uint64_t)prev->B_reg & 0x03FFFF);
         break;
     }
 
     // Z input selection based on OPMODE[3:2]
-    switch ((state->OPMODE_reg >> 2) & 0x03)
+    switch ((prev->OPMODE_reg >> 2) & 0x03)
     {
     case 0:
-        state->Z = 0;
+        prev->Z = 0;
         break;
     case 1:
-        state->Z = state->PCIN;
+        prev->Z = prev->PCIN;
         break;
     case 2:
-        state->Z = state->P;
+        prev->Z = prev->P;
         break;
     case 3:
-        state->Z = state->C_reg;
+        prev->Z = prev->C_reg;
         break;
     }
 
     // Post-adder/subtracter operation
-    if ((state->OPMODE_reg & 0x03) == 0)
+    if ((prev->OPMODE_reg & 0x03) == 0)
     {
-        state->P_b_wire = state->Z;
-        state->CARRYOUT_b_wire = 0;
+        prev->P_b_wire = prev->Z;
+        prev->CARRYOUT_b_wire = 0;
     }
-    else if (((state->OPMODE_reg >> 2) & 0x03) == 0)
+    else if (((prev->OPMODE_reg >> 2) & 0x03) == 0)
     {
-        state->P_b_wire = state->X;
-        state->CARRYOUT_b_wire = 0;
+        prev->P_b_wire = prev->X;
+        prev->CARRYOUT_b_wire = 0;
     }
     else
     {
-        state->post_adder = (state->OPMODE_reg & (1 << 7)) ? (int64_t)state->Z - (int64_t)state->X - state->CARRYIN_reg : (int64_t)state->X + (int64_t)state->Z + state->CARRYIN_reg;
+        prev->post_adder = (prev->OPMODE_reg & (1 << 7)) ? (uint64_t)prev->Z - (uint64_t)prev->X - prev->CARRYIN_reg : (uint64_t)prev->X + (uint64_t)prev->Z + prev->CARRYIN_reg;
 
         // Update P register
-        state->P_b_wire = state->post_adder & MASK_48;
-        state->CARRYOUT_b_wire = (state->post_adder >> 48) & 1; // Extract carry out
+        prev->P_b_wire = prev->post_adder & MASK_48;
+        prev->CARRYOUT_b_wire = (prev->post_adder >> 48) & 1; // Extract carry out
     }
 
     state->P = prev->P_b_wire;

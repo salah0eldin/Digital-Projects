@@ -63,24 +63,24 @@ module DSP48A1 #(
          * * 18-bit data input to multiplier, and optionally to post-
          * * adder/subtracter depending on the value of OPMODE[1:0].
          */
-        input signed [WIDTH_2-1:0] A,
+        input [WIDTH_2-1:0] A,
 
         /**
          * * 18-bit data input to pre-adder/subtracter, to multiplier depending on 
          * * OPMODE[4], or to post-adder/subtracter depending on OPMODE[1:0]. 
          */ 
-        input signed [WIDTH_2-1:0] B,
+        input [WIDTH_2-1:0] B,
 
         /**
          * * 48-bit data input to post-adder/subtracter.
          */
-        input signed [WIDTH_4-1:0] C,
+        input [WIDTH_4-1:0] C,
 
         /**
          * * 18-bit data input to pre-adder/subtracter. D[11:0] are concatenated 
          * * with A and B and optionally sent to post-adder/subtracter depending on the value of OPMODE[1:0]. 
          */
-        input signed [WIDTH_2-1:0] D,
+        input [WIDTH_2-1:0] D,
 
         /**
          * * carry input to the post-adder/subtracter.
@@ -91,13 +91,13 @@ module DSP48A1 #(
          * * 36-bit buffered multiplier data output, routable to the FPGA logic. 
          * * It is either the output of the M register (MREG = 1) or the direct output of the multiplier (MREG = 0). 
          */
-        output signed [WIDTH_3-1:0] M,
+        output [WIDTH_3-1:0] M,
 
         /**
          * * Primary data output from the post-adder/subtracter. 
          * * It is either the output of the P register (PREG = 1) or the direct output of the post-adder/subtracter (PREG = 0). 
          */
-        output signed [WIDTH_4-1:0] P,
+        output [WIDTH_4-1:0] P,
 
         /**
          * * Cascade carry out signal from post-adder/subtracter. 
@@ -172,48 +172,48 @@ module DSP48A1 #(
         input RSTP,         // * Reset for the P output registers (PREG = 1).
 
         //// ! Cascade Ports:
-        input signed [WIDTH_2-1:0] BCIN,   // * Cascade input for Port B.
-        output signed [WIDTH_2-1:0] BCOUT, // * Cascade output for Port B.
-        input signed [WIDTH_4-1:0] PCIN,   // * Cascade input for Port P.
-        output signed [WIDTH_4-1:0] PCOUT  // * Cascade output for Port P.
+        input [WIDTH_2-1:0] BCIN,   // * Cascade input for Port B.
+        output [WIDTH_2-1:0] BCOUT, // * Cascade output for Port B.
+        input [WIDTH_4-1:0] PCIN,   // * Cascade input for Port P.
+        output [WIDTH_4-1:0] PCOUT  // * Cascade output for Port P.
     );
 
     //// ! Internal Signals:
     // * 01: Input Stage
-    wire signed [WIDTH_2-1:0] B_0;
+    wire [WIDTH_2-1:0] B_0;
     wire [WIDTH_1-1:0] OPMODE_O;
 
     // * 02: Second Stage
-    wire signed [WIDTH_2-1:0] D_1;
-    wire signed [WIDTH_2-1:0] B_0_O;
-    wire signed [WIDTH_2-1:0] A_1;
-    wire signed [WIDTH_4-1:0] C_1;
+    wire [WIDTH_2-1:0] D_1;
+    wire [WIDTH_2-1:0] B_0_O;
+    wire [WIDTH_2-1:0] A_1;
+    wire [WIDTH_4-1:0] C_1;
 
     // * 03: Pre-Adder/Subtracter
-    wire signed [WIDTH_2-1:0] D_PAS_B; // ? D + B or D - B (OPMODE[6])
+    wire [WIDTH_2-1:0] D_PAS_B; // ? D + B or D - B (OPMODE[6])
 
     // * 04: Fourth Stage
-    wire signed [WIDTH_2-1:0] B_1;
+    wire [WIDTH_2-1:0] B_1;
 
     // * 05: Fifth Stage
-    wire signed [WIDTH_4-1:0] D_A_B; // ? {D_1[11:0], A_1_O, B_1_O}
-    wire signed [WIDTH_2-1:0] B_1_O;
-    wire signed [WIDTH_2-1:0] A_1_O;
+    wire [WIDTH_4-1:0] D_A_B; // ? {D_1[11:0], A_1_O, B_1_O}
+    wire [WIDTH_2-1:0] B_1_O;
+    wire [WIDTH_2-1:0] A_1_O;
 
     // * 06: Multiplier
-    wire signed [WIDTH_3-1:0] B1_Mul_A1;
+    wire [WIDTH_3-1:0] B1_Mul_A1;
     wire CYI;
 
     // * 07: Seventh Stage
-    wire signed [WIDTH_3-1:0] M_B;
+    wire [WIDTH_3-1:0] M_B;
     wire CYI_O;
 
     // * 08: Eighth Stage
-    wire signed [WIDTH_4-1:0] X;
-    wire signed [WIDTH_4-1:0] Z;
+    wire [WIDTH_4-1:0] X;
+    wire [WIDTH_4-1:0] Z;
 
     // * 09: Post-Adder/Subtracter
-    wire signed [WIDTH_4-1:0] X_Z_CIN_OP; // ? X + Z + CIN or Z - (X + CIN) (OPMODE[7])
+    wire [WIDTH_4-1:0] X_Z_CIN_OP; // ? X + Z + CIN or Z - (X + CIN) (OPMODE[7])
     wire CYO;
 
     // * 10: Output Stage

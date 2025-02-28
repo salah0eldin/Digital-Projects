@@ -1,6 +1,6 @@
 # vsim -c -do "D:\Learning\DigitalKareem\Projects\DSP48A1\sim\simulate.do" -l D:\Learning\DigitalKareem\Projects\DSP48A1\sim\simulation_log.txt work.DSP48A1_tb -voptargs="+acc" 
-# Start time: 23:30:30 on Feb 27,2025
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Start time: 02:04:34 on Feb 28,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
 # //  Questa Sim-64
 # //  Version 2021.1 win64 Jan 19 2021
 # //
@@ -15,6 +15,7 @@
 # //  is prohibited from disclosure under the Trade Secrets Act,
 # //  18 U.S.C. Section 1905.
 # //
+# Loading sv_std.std
 # Loading work.DSP48A1_tb(fast)
 # Loading work.DSP48A1(fast)
 # Loading work.DFF(fast)
@@ -24,28 +25,10 @@
 # Loading work.DFF(fast__4)
 # Loading work.DFF(fast__5)
 # do {D:\Learning\DigitalKareem\Projects\DSP48A1\sim\simulate.do}
-# $d
-#           1
-# Failed at A=02d1d B=01c30 C=00000431127d D=067e4 BCIN=059af OPMODE=11101101 PCIN=00001ac60cab CARRYIN=1: Expected BCOUT= 02a1e, Got 02a1e | Expected M=0006d67ee, Got 0006d67ee | Expected CARRYOUT=1, Got 0 | Expected P=ffffff929812, Got ffffff253024
-# $d
-#           2
-# Failed at A=02d1d B=01c30 C=00000431127d D=067e4 BCIN=059af OPMODE=11101101 PCIN=00001ac60cab CARRYIN=1: Expected BCOUT= 01c30, Got 01c30 | Expected M=0006d67ee, Got 0006d67ee | Expected CARRYOUT=1, Got 0 | Expected P=ffffff253024, Got fffffeb7c836
-# $d
-#           3
-# Failed at A=02d1d B=01c30 C=00000431127d D=067e4 BCIN=059af OPMODE=11101101 PCIN=00001ac60cab CARRYIN=1: Expected BCOUT= 01c30, Got 01c30 | Expected M=004f7a170, Got 004f7a170 | Expected CARRYOUT=0, Got 0 | Expected P=000003c3aa8f, Got 000003c3aa8e
-# $d
-#           3
-# Failed at A=06c1a B=030fc C=00005213107d D=00051 BCIN=02160 OPMODE=10011110 PCIN=000014c66913 CARRYIN=1: Expected BCOUT= 0314d, Got 0314d | Expected M=014af4998, Got 014af4998 | Expected CARRYOUT=0, Got 1 | Expected P=000052d99f70, Got 000052d99f71
-# $d
-#           4
-# Failed at A=06c1a B=030fc C=00005213107d D=00051 BCIN=02160 OPMODE=10011110 PCIN=000014c66913 CARRYIN=1: Expected BCOUT= 0314d, Got 0314d | Expected M=014d17dd2, Got 014d17dd2 | Expected CARRYOUT=0, Got 1 | Expected P=000052d99f71, Got ffffff39710c
-# $d
-#           1
-# Failed at A=0232a B=014fb C=0000712159de D=039eb BCIN=03338 OPMODE=11001010 PCIN=0000706a1146 CARRYIN=1: Expected BCOUT= 0314d, Got 0314d | Expected M=014d17dd2, Got 014d17dd2 | Expected CARRYOUT=1, Got 1 | Expected P=ffffff39710d, Got 000052d99f71
-# $d
-#           3
-# Failed at A=04440 B=008b0 C=0000222013d8 D=0128c BCIN=02583 OPMODE=00101101 PCIN=000023791a65 CARRYIN=1: Expected BCOUT= 008b0, Got 008b0 | Expected M=01cdd2100, Got 01cdd2100 | Expected CARRYOUT=0, Got 0 | Expected P=000020ee5683, Got 001020ee5684
-# ** Note: $finish    : ../DSP48A1_tb.v(195)
-#    Time: 410 ns  Iteration: 1  Instance: /DSP48A1_tb
-# End time: 23:30:36 on Feb 27,2025, Elapsed time: 0:00:06
+# Testing with file: 1_golden_model_A_B_BCIN_C_CARRYIN_D_OPMODE_PCIN_.txt
+# Testing with file: 2_golden_model_A_B_BCIN_C_D_.txt
+# Testing with file: 3_golden_model_A_B_BCIN_C_D_.txt
+# ** Note: $finish    : ../DSP48A1_tb.sv(126)
+#    Time: 12010 ns  Iteration: 1  Instance: /DSP48A1_tb
+# End time: 02:04:40 on Feb 28,2025, Elapsed time: 0:00:06
 # Errors: 0, Warnings: 0
