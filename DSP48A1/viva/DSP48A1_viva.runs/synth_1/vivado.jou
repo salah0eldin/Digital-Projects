@@ -9,3 +9,4 @@
 # Log file: D:/Learning/DigitalKareem/Projects/DSP48A1/viva/DSP48A1_viva.runs/synth_1/DSP48A1.vds
 # Journal file: D:/Learning/DigitalKareem/Projects/DSP48A1/viva/DSP48A1_viva.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
+source DSP48A1.tcl -notrace
