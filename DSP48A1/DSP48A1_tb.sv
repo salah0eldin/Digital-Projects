@@ -90,6 +90,7 @@ module DSP48A1_tb;
         // Loop through each file
         for (j = 0; j < filecount; j = j + 1) begin
             $display("Testing with file: %s", filelist[j]);
+            #0;
             file = $fopen({"../Golden/", filelist[j]}, "r");
             if (file == 0) begin
                 $display("Failed to open golden model file: %s", filelist[j]);

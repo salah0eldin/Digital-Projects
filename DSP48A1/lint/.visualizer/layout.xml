@@ -1,0 +1,19 @@
+<LayoutInfo CurrentRTLLayout="Default" version="1">
+ <Layout Name="Default" Type="IDE_pref">
+  <dockareas bottom="299" right="450" top="0" left="400"/>
+  <taborder bottom="transcript+zinmsgviewer+zinlintMsgView+zinlintDesignMetricsView+zinlintDesignInfoView+zinlintMsgStatusHistoryView+zinlintMsgDashboardView+" right="zinlintMsgSummaryView+" left="zinflownavigator+zincdcdutview+"/>
+  <activetab bottom="zinlintMsgView" activewindow="zinflownavigator" right="zinlintMsgSummaryView" left="zinflownavigator"/>
+  <window dock_location="left" visible="1" undocked="0" type="zinflownavigator" x="0" title="Flow Navigator" y="0"/>
+  <window dock_location="left" visible="1" undocked="0" type="zincdcdutview" x="0" title="Design" y="0"/>
+  <window dock_location="right" visible="1" undocked="0" type="zinlintMsgSummaryView" x="0" title="Lint Summary" y="0"/>
+  <window dock_location="bottom" visible="1" undocked="0" type="transcript" x="0" y="0"/>
+  <window dock_location="bottom" visible="1" undocked="0" type="zinmsgviewer" x="0" title="Message Viewer" y="0"/>
+  <window dock_location="bottom" visible="1" undocked="0" type="zinlintMsgView" x="0" title="Lint Checks" y="0"/>
+  <window dock_location="bottom" visible="1" undocked="0" type="zinlintDesignMetricsView" x="0" title="Design Metrics" y="0"/>
+  <window dock_location="bottom" visible="1" undocked="0" type="zinlintDesignInfoView" x="0" title="Design Information" y="0"/>
+  <window dock_location="bottom" visible="1" undocked="0" type="zinlintMsgStatusHistoryView" x="0" title="Status History" y="0"/>
+  <window dock_location="bottom" visible="1" undocked="0" type="zinlintMsgDashboardView" x="0" title="Lint Dashboard" y="0"/>
+  <window visible="1" undocked="0" type="rtl" height="1027" x="-1" y="-8" width="1920"/>
+  <window dock_location="center" visible="1" undocked="0" type="source" x="0" y="0"/>
+ </Layout>
+</LayoutInfo>

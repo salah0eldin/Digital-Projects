@@ -247,7 +247,7 @@ module DSP48A1 #(
     // * 06: Multiplier
     assign B1_Mul_A1 = B_1_O * A_1_O;
 
-    assign CYI = (CARRYINSEL == "OPMODE5") ? OPMODE[5] : (CARRYINSEL == "CARRYIN") ? CARRYIN: 1'b0;
+    assign CYI = (CARRYINSEL == "OPMODE5") ? OPMODE_O[5] : (CARRYINSEL == "CARRYIN") ? CARRYIN: 1'b0;
 
     // * 07: Seventh Stage
     DFF #(.WIDTH(WIDTH_3), .RSTTYPE(RSTTYPE), .REGEN(MREG)) DFF_M_O (.d(B1_Mul_A1), .clk(CLK), .rst(RSTM), .en(CEM), .q(M_B));
@@ -279,3 +279,4 @@ module DSP48A1 #(
     assign PCOUT = P;
 
 endmodule
+

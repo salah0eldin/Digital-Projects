@@ -8,8 +8,6 @@
 
 #include "module.h"
 
-#define TEST_CASES 100
-
 DSP48A1_State state, prev;
 int test_number = 1;
 
@@ -29,7 +27,7 @@ std::string generate_filename(const std::map<std::string, bool> &randomize_signa
     std::string filename = std::to_string(test_number++) + "_golden_model_";
     for (const auto &signal : randomize_signals)
     {
-        if (signal.second)
+        if (!signal.second)
         {
             filename += signal.first + "_";
         }
@@ -123,9 +121,12 @@ int main()
 
     memset(&state, 0, sizeof(DSP48A1_State));
     memset(&prev, 0, sizeof(DSP48A1_State));
-    
+
     std::map<std::string, bool> randomize_signals;
-    
+
+    // ---------------------------
+    // Test Case 1: Fully randomized signals including OPMODE.
+    // ---------------------------
     randomize_signals = {
         {"A", true},
         {"B", true},
@@ -135,33 +136,56 @@ int main()
         {"PCIN", true},
         {"OPMODE", true},
         {"CARRYIN", true}};
+    generate_test_vectors(randomize_signals, 100);
 
-    generate_test_vectors(randomize_signals, TEST_CASES);
+    // ---------------------------
+    // Test Case 2: Fixed multiplication-only: OPMODE = 0x01 (00000001)
+    // ---------------------------
+    state.OPMODE = 0x01;
+    randomize_signals["OPMODE"] = false;
+    generate_test_vectors(randomize_signals, 100);
 
-    randomize_signals = {
-        {"A", true},
-        {"B", true},
-        {"C", true},
-        {"D", true},
-        {"BCIN", true},
-        {"PCIN", false},
-        {"OPMODE", false},
-        {"CARRYIN", false}};
+    // ---------------------------
+    // Test Case 3: Fixed multiply-accumulate: OPMODE = 0x0B (00001011)
+    // ---------------------------
+    state.OPMODE = 0x0B;
+    generate_test_vectors(randomize_signals, 50);
 
-    generate_test_vectors(randomize_signals, TEST_CASES);
-    
-    state.OPMODE = 0x35;
-    randomize_signals = {
-        {"A", true},
-        {"B", true},
-        {"C", true},
-        {"D", true},
-        {"BCIN", true},
-        {"PCIN", false},
-        {"OPMODE", false},
-        {"CARRYIN", false}};
+    // ---------------------------
+    // Test Case 4: Fixed multiply-subtract: OPMODE = 0x1B (00011011)
+    // ---------------------------
+    state.OPMODE = 0x1B;
+    generate_test_vectors(randomize_signals, 50);
 
-    generate_test_vectors(randomize_signals, TEST_CASES);
+    // ---------------------------
+    // Test Case 5: Fixed addition: OPMODE = 0x26 (00100110)
+    // ---------------------------
+    state.OPMODE = 0x26;
+    generate_test_vectors(randomize_signals, 50);
+
+    // ---------------------------
+    // Test Case 6: Fixed subtraction: OPMODE = 0x2E (00101110)
+    // ---------------------------
+    state.OPMODE = 0x2E;
+    generate_test_vectors(randomize_signals, 50);
+
+    // ---------------------------
+    // Test Case 7: Fixed three-input addition: OPMODE = 0x66 (01100110)
+    // ---------------------------
+    state.OPMODE = 0x66;
+    generate_test_vectors(randomize_signals, 50);
+
+    // ---------------------------
+    // Test Case 8: Fixed three-input add/subtract: OPMODE = 0x6E (01101110)
+    // ---------------------------
+    state.OPMODE = 0x6E;
+    generate_test_vectors(randomize_signals, 50);
+
+    // ---------------------------
+    // Test Case 9: Fixed clear output: OPMODE = 0x00 (00000000)
+    // ---------------------------
+    state.OPMODE = 0x00;
+    generate_test_vectors(randomize_signals, 50);
 
     return 0;
 }

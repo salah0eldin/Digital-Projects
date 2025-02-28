@@ -1,5 +1,5 @@
 # vsim -c -do "D:\Learning\DigitalKareem\Projects\DSP48A1\sim\simulate.do" -l D:\Learning\DigitalKareem\Projects\DSP48A1\sim\simulation_log.txt work.DSP48A1_tb -voptargs="+acc" 
-# Start time: 02:04:34 on Feb 28,2025
+# Start time: 18:27:14 on Feb 28,2025
 # ** Note: (vsim-8009) Loading existing optimized design _opt
 # //  Questa Sim-64
 # //  Version 2021.1 win64 Jan 19 2021
@@ -25,10 +25,16 @@
 # Loading work.DFF(fast__4)
 # Loading work.DFF(fast__5)
 # do {D:\Learning\DigitalKareem\Projects\DSP48A1\sim\simulate.do}
-# Testing with file: 1_golden_model_A_B_BCIN_C_CARRYIN_D_OPMODE_PCIN_.txt
-# Testing with file: 2_golden_model_A_B_BCIN_C_D_.txt
-# Testing with file: 3_golden_model_A_B_BCIN_C_D_.txt
-# ** Note: $finish    : ../DSP48A1_tb.sv(126)
-#    Time: 12010 ns  Iteration: 1  Instance: /DSP48A1_tb
-# End time: 02:04:40 on Feb 28,2025, Elapsed time: 0:00:06
+# Testing with file: 1_golden_model_.txt
+# Testing with file: 2_golden_model_OPMODE_.txt
+# Testing with file: 3_golden_model_OPMODE_.txt
+# Testing with file: 4_golden_model_OPMODE_.txt
+# Testing with file: 5_golden_model_OPMODE_.txt
+# Testing with file: 6_golden_model_OPMODE_.txt
+# Testing with file: 7_golden_model_OPMODE_.txt
+# Testing with file: 8_golden_model_OPMODE_.txt
+# Testing with file: 9_golden_model_OPMODE_.txt
+# ** Note: $finish    : ../DSP48A1_tb.sv(127)
+#    Time: 22010 ns  Iteration: 1  Instance: /DSP48A1_tb
+# End time: 18:27:20 on Feb 28,2025, Elapsed time: 0:00:06
 # Errors: 0, Warnings: 0

@@ -2,7 +2,7 @@ module DFF
     #(
          parameter WIDTH = 1,
          parameter RSTTYPE = "ASYNC",
-         parameter REGEN = 1 // 1 for flip-flop operation, 0 for direct assign
+         parameter REGEN = 1
      )
      (
          input wire clk,

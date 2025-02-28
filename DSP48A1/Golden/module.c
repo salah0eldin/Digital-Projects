@@ -38,7 +38,7 @@ void DSP48A1_clock_cycle(DSP48A1_State *state, DSP48A1_State *prev)
 #if CARRYINSEL == 1
     state->CARRYIN_1 = prev->CARRYIN;
 #elif CARRYINSEL == 0
-    prev->CARRYIN_reg = (prev->OPMODE_reg & (1 << 5)) ? 1 : 0;
+    state->CARRYIN_reg = (prev->OPMODE_reg & (1 << 5)) ? 1 : 0;
 #else
     state->CARRYIN_1 = 0;
 #endif
