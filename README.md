@@ -1,16 +1,16 @@
-# Digital Projects
+# Digital Projects ![Project Badge](https://img.shields.io/badge/Project-Digital%20Projects-blue)
 
 Welcome to the Digital Projects repository! This collection showcases the projects undertaken during the Digital Design and Verification Diploma. Each project demonstrates various aspects of digital design and verification techniques.
+
+![Digital Design](https://via.placeholder.com/800x200.png?text=Digital+Design+and+Verification)
 
 ## Table of Contents
 1. [SPI_Slave_Interface](#spi_slave_interface)
 2. [DSP48A1](#dsp48a1)
 
-## SPI_Slave_Interface
+## SPI_Slave_Interface ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 
 **Description:** The SPI_Slave_Interface project focuses on the design and implementation of an SPI Slave Interface. This project includes two implementations: one with a new FSM design with fewer states and another with the required debug core implemented in the constraints file. The debug core in the required design introduces an unwanted negative hold slack, negatively impacting performance.
-
-**Status:** Completed
 
 ### Design Files
 - **spi_slave_interface.v:** Verilog file containing the optimized design of the SPI Slave Interface.
@@ -38,6 +38,7 @@ Welcome to the Digital Projects repository! This collection showcases the projec
 ### Vivado Project Files
 - **SPI.xpr:** Vivado project TCL script for the optimized SPI Slave Interface.
 - **SPI_2.xpr:** Vivado project TCL script for the required SPI Slave Interface with the debug core.
+
 ### File Locations
 - **Design Files:**         [./SPI_Slave_Interface/](./SPI_Slave_Interface/)
 - **Test Bench Files:**     [./SPI_Slave_Interface/](./SPI_Slave_Interface/)
@@ -46,11 +47,9 @@ Welcome to the Digital Projects repository! This collection showcases the projec
 - **Lint Report:**          [./SPI_Slave_Interface/lint/*/lint.rpt](./SPI_Slave_Interface/lint/)
 - **Constraints Files:**    [./SPI_Slave_Interface/viva/*.xdc](./SPI_Slave_Interface/viva/)
 
-## DSP48A1
+## DSP48A1 ![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
 
 **Description:** The DSP48A1 project focuses on the design and implementation of the DSP48A1 block, an essential component in digital signal processing systems. This project includes the design files, test benches, and simulation results.
-
-**Status:** In Progress
 
 ### Design Files
 - **DSP48A1.v:** Verilog file containing the design of the DSP48A1 block.
@@ -72,6 +71,7 @@ Welcome to the Digital Projects repository! This collection showcases the projec
 
 ### Vivado Project Files
 - **DSP48A1.xpr:** Vivado project file for the DSP48A1 block.
+
 ### File Locations
 - **Design Files:**         [./DSP48A1/](./DSP48A1/)
 - **Test Bench Files:**     [./DSP48A1/](./DSP48A1/)
@@ -81,7 +81,7 @@ Welcome to the Digital Projects repository! This collection showcases the projec
 
 ### Contact
 
-For any questions or feedback, please reach out via [GitHub issues](https://github.com/salah0eldin/).
+For any questions or feedback, please reach out via [GitHub](https://github.com/salah0eldin/).
 
 ---
 
