@@ -33,10 +33,6 @@ Welcome to the Digital Projects repository! This collection showcases the projec
 - **SPI.xdc:** Constraints file for the optimized SPI Slave Interface.
 - **SPI_2.xdc:** Constraints file for the required SPI Slave Interface with the debug core.
 
-### Vivado Project Files
-- **SPI.xpr:** Vivado project TCL script for the optimized SPI Slave Interface.
-- **SPI_2.xpr:** Vivado project TCL script for the required SPI Slave Interface with the debug core.
-
 ### File Locations
 - **Design Files:**         [./SPI_Slave_Interface/](./SPI_Slave_Interface/)
 - **Test Bench Files:**     [./SPI_Slave_Interface/](./SPI_Slave_Interface/)
@@ -66,9 +62,6 @@ Welcome to the Digital Projects repository! This collection showcases the projec
 
 ### Do Files
 - **DSP48A1_tb.do:** Script file used to automate the simulation process for the test benches.
-
-### Vivado Project Files
-- **DSP48A1.xpr:** Vivado project file for the DSP48A1 block.
 
 ### File Locations
 - **Design Files:**         [./DSP48A1/](./DSP48A1/)
