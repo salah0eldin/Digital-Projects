@@ -1,3 +1,0 @@
-0@#@D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/single_port_async_ram.v
-1@#@D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/spi_slave_interface.v
-

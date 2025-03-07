@@ -1,1 +1,0 @@
-TraceSignalModule;spi_slave_interface;tx_data,spi_slave_interface,
