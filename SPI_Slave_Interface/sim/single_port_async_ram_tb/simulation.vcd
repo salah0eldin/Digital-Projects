@@ -1,0 +1,212 @@
+$date
+	Tue Mar  4 05:27:44 2025
+$end
+$version
+	QuestaSim Version 2021.1
+$end
+$timescale
+	1ns
+$end
+
+$scope module single_port_async_ram_tb $end
+$var parameter 32 ! MEM_DEPTH $end
+$var parameter 32 " ADDR_SIZE $end
+$var parameter 32 # INPUT_SIZE $end
+$var parameter 32 $ WORD_SIZE $end
+$var reg 10 % din [9:0] $end
+$var reg 1 & clk $end
+$var reg 1 ' rst_n $end
+$var reg 1 ( rx_valid $end
+$var wire 1 ) dout [7] $end
+$var wire 1 * dout [6] $end
+$var wire 1 + dout [5] $end
+$var wire 1 , dout [4] $end
+$var wire 1 - dout [3] $end
+$var wire 1 . dout [2] $end
+$var wire 1 / dout [1] $end
+$var wire 1 0 dout [0] $end
+$var wire 1 1 tx_valid $end
+
+$scope module dut $end
+$var parameter 32 2 MEM_DEPTH $end
+$var parameter 32 3 ADDR_SIZE $end
+$var parameter 32 4 INPUT_SIZE $end
+$var parameter 32 5 WORD_SIZE $end
+$var wire 1 6 din [9] $end
+$var wire 1 7 din [8] $end
+$var wire 1 8 din [7] $end
+$var wire 1 9 din [6] $end
+$var wire 1 : din [5] $end
+$var wire 1 ; din [4] $end
+$var wire 1 < din [3] $end
+$var wire 1 = din [2] $end
+$var wire 1 > din [1] $end
+$var wire 1 ? din [0] $end
+$var wire 1 @ clk $end
+$var wire 1 A rst_n $end
+$var wire 1 B rx_valid $end
+$var reg 8 C dout [7:0] $end
+$var reg 1 D tx_valid $end
+$var reg 8 E addr_wr_reg [7:0] $end
+$var reg 8 F addr_rd_reg [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 %
+0&
+0'
+0(
+bx C
+xD
+bx E
+bx F
+b100000000 !
+b1000 "
+b1010 #
+b1000 $
+b100000000 2
+b1000 3
+b1010 4
+b1000 5
+x0
+x/
+x.
+x-
+x,
+x+
+x*
+x)
+x1
+0B
+0A
+0@
+0?
+0>
+0=
+0<
+0;
+0:
+09
+08
+07
+06
+$end
+#5
+1&
+1@
+b0 E
+b0 F
+b0 C
+0D
+00
+0/
+0.
+0-
+0,
+0+
+0*
+0)
+01
+#10
+1'
+0&
+1A
+0@
+#15
+1&
+1@
+#20
+b1 %
+1(
+0&
+1?
+1B
+0@
+#25
+1&
+1@
+b1 E
+#30
+0(
+0&
+0B
+0@
+#35
+1&
+1@
+#40
+b100001010 %
+1(
+0&
+0?
+1>
+1<
+17
+1B
+0@
+#45
+1&
+1@
+#50
+0(
+0&
+0B
+0@
+#55
+1&
+1@
+#60
+b1000000001 %
+1(
+0&
+1?
+0>
+0<
+07
+16
+1B
+0@
+#65
+1&
+1@
+b1 F
+#70
+0(
+0&
+0B
+0@
+#75
+1&
+1@
+#80
+b1100000000 %
+1(
+0&
+0?
+17
+1B
+0@
+#85
+1&
+1@
+b1010 C
+1D
+1/
+1-
+11
+#90
+0(
+0&
+0B
+0@
+#95
+1&
+1@
+#100
+0&
+0@
+#105
+1&
+1@

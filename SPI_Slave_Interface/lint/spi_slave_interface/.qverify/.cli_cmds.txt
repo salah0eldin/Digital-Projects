@@ -1,0 +1,63 @@
+
+# D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/lint/spi_slave_interface/qverify_cmds.tcl : 5
+C:/QFT_2021.1/QFT_2021.1/QFT/V2021.1/win64/share/modeltech/win64/vlib work
+
+# D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/lint/spi_slave_interface/qverify_cmds.tcl : 6
+C:/QFT_2021.1/QFT_2021.1/QFT/V2021.1/win64/share/modeltech/win64/vmap work work
+
+# D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/lint/spi_slave_interface/qverify_cmds.tcl : 7
+C:/QFT_2021.1/QFT_2021.1/QFT/V2021.1/win64/share/modeltech/win64/vlog D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/single_port_async_ram.v D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/single_port_async_ram_tb.v D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/spi_slave_interface.v -work work
+
+# D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/lint/spi_slave_interface/qverify_cmds.tcl : 416
+C:/QFT_2021.1/QFT_2021.1/QFT/V2021.1/win64/bin/qverifyek  -od D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/lint/spi_slave_interface -l .elab.log  -cli -internal -cmd elab -zdb D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/lint/spi_slave_interface/qcache/DB/zdb_0 -tool lint -d spi_slave_interface -L work
+
+# D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/lint/spi_slave_interface/qverify_cmds.tcl : 416
+C:/QFT_2021.1/QFT_2021.1/QFT/V2021.1/win64/bin/qverifyek  -od D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/lint/spi_slave_interface -l .createnl.log  -cli -internal -cmd create_netlist -zdb D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/lint/spi_slave_interface/qcache/DB/zdb_0 -tool lint -d spi_slave_interface -L work
+
+# D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/lint/spi_slave_interface/qverify_cmds.tcl : 418
+C:/QFT_2021.1/QFT_2021.1/QFT/V2021.1/win64/bin/qverifyek  -od D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/lint/spi_slave_interface -l .qlcstatus.log  -cli -internal -cmd qlc_status_update -zdb D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/lint/spi_slave_interface/qcache/DB/zdb_1 -db D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/lint/spi_slave_interface/lint.db
+
+# D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/lint/spi_slave_interface/qverify_cmds.tcl : 5
+C:/QFT_2021.1/QFT_2021.1/QFT/V2021.1/win64/share/modeltech/win64/vlib work
+
+# D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/lint/spi_slave_interface/qverify_cmds.tcl : 6
+C:/QFT_2021.1/QFT_2021.1/QFT/V2021.1/win64/share/modeltech/win64/vmap work work
+
+# D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/lint/spi_slave_interface/qverify_cmds.tcl : 7
+C:/QFT_2021.1/QFT_2021.1/QFT/V2021.1/win64/share/modeltech/win64/vlog D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/single_port_async_ram.v D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/single_port_async_ram_tb.v D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/spi_slave_interface.v -work work
+
+# D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/lint/spi_slave_interface/qverify_cmds.tcl : 5
+C:/QFT_2021.1/QFT_2021.1/QFT/V2021.1/win64/share/modeltech/win64/vlib work
+
+# D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/lint/spi_slave_interface/qverify_cmds.tcl : 6
+C:/QFT_2021.1/QFT_2021.1/QFT/V2021.1/win64/share/modeltech/win64/vmap work work
+
+# D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/lint/spi_slave_interface/qverify_cmds.tcl : 7
+C:/QFT_2021.1/QFT_2021.1/QFT/V2021.1/win64/share/modeltech/win64/vlog D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/single_port_async_ram.v D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/single_port_async_ram_tb.v D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/spi_slave_interface.v -work work
+
+# D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/lint/spi_slave_interface/qverify_cmds.tcl : 5
+C:/QFT_2021.1/QFT_2021.1/QFT/V2021.1/win64/share/modeltech/win64/vlib work
+
+# D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/lint/spi_slave_interface/qverify_cmds.tcl : 6
+C:/QFT_2021.1/QFT_2021.1/QFT/V2021.1/win64/share/modeltech/win64/vmap work work
+
+# D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/lint/spi_slave_interface/qverify_cmds.tcl : 7
+C:/QFT_2021.1/QFT_2021.1/QFT/V2021.1/win64/share/modeltech/win64/vlog D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/single_port_async_ram.v D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/single_port_async_ram_tb.v D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/spi_slave_interface.v -work work
+
+# D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/lint/spi_slave_interface/qverify_cmds.tcl : 5
+C:/QFT_2021.1/QFT_2021.1/QFT/V2021.1/win64/share/modeltech/win64/vlib work
+
+# D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/lint/spi_slave_interface/qverify_cmds.tcl : 6
+C:/QFT_2021.1/QFT_2021.1/QFT/V2021.1/win64/share/modeltech/win64/vmap work work
+
+# D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/lint/spi_slave_interface/qverify_cmds.tcl : 7
+C:/QFT_2021.1/QFT_2021.1/QFT/V2021.1/win64/share/modeltech/win64/vlog D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/single_port_async_ram.v D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/single_port_async_ram_tb.v D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/spi_slave_interface.v -work work
+
+# D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/lint/spi_slave_interface/qverify_cmds.tcl : 416
+C:/QFT_2021.1/QFT_2021.1/QFT/V2021.1/win64/bin/qverifyek  -od D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/lint/spi_slave_interface -l .elab.log  -cli -internal -cmd elab -zdb D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/lint/spi_slave_interface/qcache/DB/zdb_2 -tool lint -d spi_slave_interface -L work
+
+# D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/lint/spi_slave_interface/qverify_cmds.tcl : 416
+C:/QFT_2021.1/QFT_2021.1/QFT/V2021.1/win64/bin/qverifyek  -od D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/lint/spi_slave_interface -l .createnl.log  -cli -internal -cmd create_netlist -zdb D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/lint/spi_slave_interface/qcache/DB/zdb_2 -tool lint -d spi_slave_interface -L work
+
+# D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/lint/spi_slave_interface/qverify_cmds.tcl : 418
+C:/QFT_2021.1/QFT_2021.1/QFT/V2021.1/win64/bin/qverifyek  -od D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/lint/spi_slave_interface -l .qlcstatus.log  -cli -internal -cmd qlc_status_update -zdb D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/lint/spi_slave_interface/qcache/DB/zdb_3 -db D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/lint/spi_slave_interface/lint.db

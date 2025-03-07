@@ -1,0 +1,55 @@
+m255
+K4
+z2
+!s11f vlog 2021.1 2021.01, Jan 19 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/lint/single_port_async_ram
+vsingle_port_async_ram
+Z1 !s110 1741058192
+!i10b 1
+!s100 j>U^4aDD[Ikj=8TJbDEGO3
+I1kSaG`nGF`YdK:^Gl@VAG1
+R0
+w1741058141
+8D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/single_port_async_ram.v
+FD:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/single_port_async_ram.v
+!i122 0
+L0 1 67
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 OL;L;2021.1;73
+r1
+!s85 0
+31
+Z4 !s108 1741058192.000000
+!s107 D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/spi_slave.v|D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/single_port_async_ram.v|
+Z5 !s90 D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/single_port_async_ram.v|D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/spi_slave.v|-work|work|
+!i113 0
+Z6 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z7 tCvgOpt 0
+vspi_slave
+R1
+!i10b 1
+!s100 <F`<74l37_VGOCjEA`<Q@2
+IAab=C6Y5;mXQUCk9Df4N;3
+R0
+w1741058120
+8D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/spi_slave.v
+FD:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/spi_slave.v
+!i122 0
+L0 1 6
+R2
+R3
+r1
+!s85 0
+31
+R4
+Z8 !s107 D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/spi_slave.v|D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/single_port_async_ram.v|
+R5
+!i113 0
+R6
+R7

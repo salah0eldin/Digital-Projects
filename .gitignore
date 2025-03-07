@@ -10,3 +10,8 @@ DSP48A1/lint/.qverify/
 DSP48A1/lint/qcache/
 DSP48A1/lint/work/
 DSP48A1/sim/work/
+
+SPI_Slave_Interface/lint/.qverify/
+SPI_Slave_Interface/lint/qcache/
+SPI_Slave_Interface/lint/work/
+SPI_Slave_Interface/sim/work/

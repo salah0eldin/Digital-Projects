@@ -1,0 +1,617 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /spi_slave_interface_2_tb/dut/ram
+=== Design Unit: work.single_port_async_ram
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         9         8         1    88.88%
+
+================================Branch Details================================
+
+Branch Coverage for instance /spi_slave_interface_2_tb/dut/ram
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File ../../single_port_async_ram.v
+------------------------------------IF Branch------------------------------------
+    37                                        51     Count coming in to IF
+    37              1                          1     
+    42              1                         50     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    43                                        50     Count coming in to IF
+    43              1                          5     
+                                              45     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------CASE Branch------------------------------------
+    45                                         5     Count coming in to CASE
+    46              1                          1     
+    50              1                          1     
+    54              1                          1     
+    58              1                          2     
+                                         ***0***     All False Count
+Branch totals: 4 hits of 5 branches = 80.00%
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      13        13         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /spi_slave_interface_2_tb/dut/ram --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File ../../single_port_async_ram.v
+    36              1                         51     
+    38              1                          1     
+    39              1                          1     
+    40              1                          1     
+    41              1                          1     
+    47              1                          1     
+    48              1                          1     
+    51              1                          1     
+    52              1                          1     
+    55              1                          1     
+    56              1                          1     
+    59              1                          2     
+    60              1                          2     
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        180        31       149    17.22%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /spi_slave_interface_2_tb/dut/ram --
+
+                                              Node      1H->0L      0L->1H       0L->Z       Z->0L       1H->Z       Z->H1     ExtMode  "Coverage"
+                                              ---------------------------------------------------------------------------------------------------
+                                  addr_rd_reg[7-1]           0           0           0           0           0           0           3        0.00 
+                                    addr_rd_reg[0]           0           1           0           0           0           0           3       16.66 
+                                  addr_wr_reg[7-1]           0           0           0           0           0           0           3        0.00 
+                                    addr_wr_reg[0]           0           1           0           0           0           0           3       16.66 
+                                               clk           1           1           0*          0*          0*          0*    2-STATE      100.00 
+                                          din[0-9]           1           1           0*          0*          0*          0*    2-STATE      100.00 
+                                           dout[7]           0           1           0           0           0           0           3       16.66 
+                                         dout[6-4]           0           0           0           0           0           0           3        0.00 
+                                           dout[3]           0           1           0           0           0           0           3       16.66 
+                                           dout[2]           0           0           0           0           0           0           3        0.00 
+                                           dout[1]           0           1           0           0           0           0           3       16.66 
+                                           dout[0]           0           0           0           0           0           0           3        0.00 
+                                             rst_n           0           1           0           0           0           0           3       16.66 
+                                          rx_valid           1           1           0*          0*          0*          0*    2-STATE      100.00 
+                                          tx_valid           0           1           0           0           0           0           3       16.66 
+
+========
+(n*) - Number was not used in coverage calculations performed by extended toggle algorithms.
+
+Extended Toggle Coverage Calculation Criteria:
+-----------------------------------------------
+	ExtMode 1: 0L->1H & 1H->0L & any one 'Z' transition (to/from 'Z').
+	ExtMode 2: 0L->1H & 1H->0L & one transition to 'Z' & one transition from 'Z'.
+	ExtMode 3: 0L->1H & 1H->0L & all 'Z' transitions.
+========
+
+Total Node Count     =         38 
+Toggled Node Count   =         12 
+Untoggled Node Count =         26 
+
+Toggle Coverage      =      17.22% (31 of 180 bins)
+
+=================================================================================
+=== Instance: /spi_slave_interface_2_tb/dut
+=== Design Unit: work.spi_slave_interface_2
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        41        38         3    92.68%
+
+================================Branch Details================================
+
+Branch Coverage for instance /spi_slave_interface_2_tb/dut
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File ../../spi_slave_interface_2.v
+------------------------------------IF Branch------------------------------------
+    58                                        20     Count coming in to IF
+    58              1                          1     
+    60              1                         19     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    67                                        36     Count coming in to IF
+    67              1                          2     
+    70              1                         34     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------CASE Branch------------------------------------
+    71                                        34     Count coming in to CASE
+    72              1                          8     
+    78              1                          6     
+    88              1                         11     
+    94              1                          5     
+    100             1                          4     
+    106             1                    ***0***     
+Branch totals: 5 hits of 6 branches = 83.33%
+
+------------------------------------IF Branch------------------------------------
+    73                                         8     Count coming in to IF
+    73              1                          4     
+    75              1                          4     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    79                                         6     Count coming in to IF
+    79              1                          3     
+    81              1                          3     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    82                                         3     Count coming in to IF
+    82              1                          1     
+    84              1                          2     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    89                                        11     Count coming in to IF
+    89              1                          2     
+    91              1                          9     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    95                                         5     Count coming in to IF
+    95              1                          1     
+    97              1                          4     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    101                                        4     Count coming in to IF
+    101             1                          1     
+    103             1                          3     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    113                                       66     Count coming in to IF
+    113             1                          1     
+    118             1                         65     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------CASE Branch------------------------------------
+    121                                       65     Count coming in to CASE
+    122             1                          7     
+    125             1                          4     
+    128             1                         22     
+    137             1                         11     
+    148             1                         21     
+    167             1                    ***0***     
+Branch totals: 5 hits of 6 branches = 83.33%
+
+------------------------------------IF Branch------------------------------------
+    129                                       22     Count coming in to IF
+    129             1                          2     
+    131             1                         20     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    139                                       11     Count coming in to IF
+    139             1                          1     
+    142             1                         10     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    150                                       21     Count coming in to IF
+    150             1                          1     
+    152             1                         10     
+    159             1                         10     
+Branch totals: 3 hits of 3 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    154                                       10     Count coming in to IF
+    154             1                          8     
+                                               2     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    162                                       10     Count coming in to IF
+    162             1                    ***0***     
+                                              10     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                       5         4         1    80.00%
+
+================================Condition Details================================
+
+Condition Coverage for instance /spi_slave_interface_2_tb/dut --
+
+  File ../../spi_slave_interface_2.v
+----------------Focused Condition View-------------------
+Line       129 Item    1  (counter >= 10)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+       Input Term   Covered  Reason for no coverage   Hint
+      -----------  --------  -----------------------  --------------
+  (counter >= 10)         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  (counter >= 10)_0     -                             
+  Row   2:          1  (counter >= 10)_1     -                             
+
+----------------Focused Condition View-------------------
+Line       139 Item    1  (counter >= 10)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+       Input Term   Covered  Reason for no coverage   Hint
+      -----------  --------  -----------------------  --------------
+  (counter >= 10)         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  (counter >= 10)_0     -                             
+  Row   2:          1  (counter >= 10)_1     -                             
+
+----------------Focused Condition View-------------------
+Line       150 Item    1  (counter >= 18)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+       Input Term   Covered  Reason for no coverage   Hint
+      -----------  --------  -----------------------  --------------
+  (counter >= 18)         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  (counter >= 18)_0     -                             
+  Row   2:          1  (counter >= 18)_1     -                             
+
+----------------Focused Condition View-------------------
+Line       152 Item    1  (counter >= 10)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+       Input Term   Covered  Reason for no coverage   Hint
+      -----------  --------  -----------------------  --------------
+  (counter >= 10)         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  (counter >= 10)_0     -                             
+  Row   2:          1  (counter >= 10)_1     -                             
+
+----------------Focused Condition View-------------------
+Line       162 Item    1  (counter >= 10)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+       Input Term   Covered  Reason for no coverage   Hint
+      -----------  --------  -----------------------  --------------
+  (counter >= 10)         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  (counter >= 10)_0     -                             
+  Row   2:    ***0***  (counter >= 10)_1     -                             
+
+
+FSM Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    FSM States                       5         5         0   100.00%
+    FSM Transitions                  8         7         1    87.50%
+
+================================FSM Details================================
+
+FSM Coverage for instance /spi_slave_interface_2_tb/dut --
+
+FSM_ID: cs
+    Current State Object : cs
+    ----------------------
+    State Value MapInfo :
+    ---------------------
+Line          State Name               Value
+----          ----------               -----
+  72                IDLE                   0
+  78             CHK_CMD                   1
+  94            READ_ADD                   3
+ 100           READ_DATA                   4
+  88               WRITE                   2
+    Covered States :
+    ----------------
+                   State           Hit_count
+                   -----           ---------
+                    IDLE                   8          
+                 CHK_CMD                   4          
+                READ_ADD                   2          
+               READ_DATA                   2          
+                   WRITE                   4          
+    Covered Transitions :
+    ---------------------
+Line            Trans_ID           Hit_count          Transition          
+----            --------           ---------          ----------          
+  74                   0                   4          IDLE -> CHK_CMD               
+  85                   1                   1          CHK_CMD -> READ_ADD           
+  83                   2                   1          CHK_CMD -> READ_DATA          
+  80                   3                   2          CHK_CMD -> WRITE              
+  96                   5                   1          READ_ADD -> IDLE              
+ 102                   6                   1          READ_DATA -> IDLE             
+  90                   7                   2          WRITE -> IDLE                 
+    Uncovered Transitions :
+    -----------------------
+Line            Trans_ID          Transition          
+----            --------          ----------          
+  59                   4          CHK_CMD -> IDLE     
+
+
+    Summary                       Bins      Hits    Misses  Coverage
+    -------                       ----      ----    ------  --------
+        FSM States                   5         5         0   100.00%
+        FSM Transitions              8         7         1    87.50%
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      43        38         5    88.37%
+
+================================Statement Details================================
+
+Statement Coverage for instance /spi_slave_interface_2_tb/dut --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File ../../spi_slave_interface_2.v
+    56              1                         20     
+    59              1                          1     
+    61              1                         19     
+    65              1                         36     
+    68              1                          2     
+    74              1                          4     
+    76              1                          4     
+    80              1                          3     
+    83              1                          1     
+    85              1                          2     
+    90              1                          2     
+    92              1                          9     
+    96              1                          1     
+    98              1                          4     
+    102             1                          1     
+    104             1                          3     
+    106             1                    ***0***     
+    112             1                         66     
+    114             1                          1     
+    115             1                          1     
+    116             1                          1     
+    119             1                         65     
+    120             1                         65     
+    126             1                          4     
+    130             1                          2     
+    132             1                         20     
+    133             1                         20     
+    134             1                         20     
+    138             1                         11     
+    140             1                          1     
+    143             1                         10     
+    144             1                         10     
+    145             1                         10     
+    149             1                         21     
+    153             1                         10     
+    155             1                          8     
+    156             1                          8     
+    160             1                         10     
+    161             1                         10     
+    163             1                    ***0***     
+    168             1                    ***0***     
+    169             1                    ***0***     
+    170             1                    ***0***     
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        118        58        60    49.15%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /spi_slave_interface_2_tb/dut --
+
+                                              Node      1H->0L      0L->1H       0L->Z       Z->0L       1H->Z       Z->H1     ExtMode  "Coverage"
+                                              ---------------------------------------------------------------------------------------------------
+                                              MISO           1           1           0*          0*          0*          0*    2-STATE      100.00 
+                                              MOSI           1           1           0*          0*          0*          0*    2-STATE      100.00 
+                                           READ_OP           1           1           0*          0*          0*          0*    2-STATE      100.00 
+                                              SS_n           1           1           0*          0*          0*          0*    2-STATE      100.00 
+                                               clk           1           1           0*          0*          0*          0*    2-STATE      100.00 
+                                        counter[4]           0           1           0           0           0           0           3       16.66 
+                                      counter[3-0]           1           1           0*          0*          0*          0*    2-STATE      100.00 
+                                           cs[2-0]           1           1           0*          0*          0*          0*    2-STATE      100.00 
+                                           ns[2-0]           1           1           0*          0*          0*          0*    2-STATE      100.00 
+                                             rst_n           0           1           0           0           0           0           3       16.66 
+                                      rx_data[9-0]           1           1           0*          0*          0*          0*    2-STATE      100.00 
+                                          rx_valid           1           1           0*          0*          0*          0*    2-STATE      100.00 
+                                        tx_data[0]           0           0           0           0           0           0           3        0.00 
+                                        tx_data[1]           0           1           0           0           0           0           3       16.66 
+                                        tx_data[2]           0           0           0           0           0           0           3        0.00 
+                                        tx_data[3]           0           1           0           0           0           0           3       16.66 
+                                      tx_data[4-6]           0           0           0           0           0           0           3        0.00 
+                                        tx_data[7]           0           1           0           0           0           0           3       16.66 
+                                          tx_valid           0           1           0           0           0           0           3       16.66 
+
+========
+(n*) - Number was not used in coverage calculations performed by extended toggle algorithms.
+
+Extended Toggle Coverage Calculation Criteria:
+-----------------------------------------------
+	ExtMode 1: 0L->1H & 1H->0L & any one 'Z' transition (to/from 'Z').
+	ExtMode 2: 0L->1H & 1H->0L & one transition to 'Z' & one transition from 'Z'.
+	ExtMode 3: 0L->1H & 1H->0L & all 'Z' transitions.
+========
+
+Total Node Count     =         37 
+Toggled Node Count   =         26 
+Untoggled Node Count =         11 
+
+Toggle Coverage      =      49.15% (58 of 118 bins)
+
+=================================================================================
+=== Instance: /spi_slave_interface_2_tb
+=== Design Unit: work.spi_slave_interface_2_tb
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         2         1         1    50.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /spi_slave_interface_2_tb
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File ../../spi_slave_interface_tb.v
+------------------------------------IF Branch------------------------------------
+    83                                         1     Count coming in to IF
+    83              1                          1     
+    85              1                    ***0***     
+Branch totals: 1 hit of 2 branches = 50.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                       1         0         1     0.00%
+
+================================Condition Details================================
+
+Condition Coverage for instance /spi_slave_interface_2_tb --
+
+  File ../../spi_slave_interface_tb.v
+----------------Focused Condition View-------------------
+Line       83 Item    1  (out == expected)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+         Input Term   Covered  Reason for no coverage   Hint
+        -----------  --------  -----------------------  --------------
+  (out == expected)         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:    ***0***  (out == expected)_0   -                             
+  Row   2:          1  (out == expected)_1   -                             
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      49        48         1    97.95%
+
+================================Statement Details================================
+
+Statement Coverage for instance /spi_slave_interface_2_tb --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File ../../spi_slave_interface_tb.v
+    34              1                          1     
+    35              1                          1     
+    35              2                        133     
+    35              3                        132     
+    41              1                          1     
+    42              1                          1     
+    43              1                          1     
+    44              1                          1     
+    45              1                          1     
+    48              1                          1     
+    49              1                          1     
+    52              1                          1     
+    53              1                          1     
+    54              1                          1     
+    57              1                          1     
+    58              1                          1     
+    59              1                          1     
+    60              1                          1     
+    61              1                          1     
+    62              1                          1     
+    65              1                          1     
+    66              1                          1     
+    67              1                          1     
+    68              1                          1     
+    69              1                          1     
+    72              1                          1     
+    73              1                          1     
+    74              1                          1     
+    75              1                          1     
+    76              1                          1     
+    77              1                          1     
+    78              1                          1     
+    79              1                          1     
+    82              1                          1     
+    84              1                          1     
+    86              1                    ***0***     
+    90              1                          1     
+    91              1                          1     
+    98              1                          4     
+    99              1                          4     
+    100             1                          4     
+    101             1                          4     
+    101             2                         40     
+    102             1                         40     
+    103             1                         40     
+    111             1                          1     
+    111             2                          8     
+    112             1                          8     
+    113             1                          8     
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        110        15        95    13.63%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /spi_slave_interface_2_tb --
+
+                                              Node      1H->0L      0L->1H       0L->Z       Z->0L       1H->Z       Z->H1     ExtMode  "Coverage"
+                                              ---------------------------------------------------------------------------------------------------
+                                              MISO           1           1           0*          0*          0*          0*    2-STATE      100.00 
+                                              MOSI           1           1           0*          0*          0*          0*    2-STATE      100.00 
+                                              SS_n           1           1           0*          0*          0*          0*    2-STATE      100.00 
+                                               clk           1           1           0*          0*          0*          0*    2-STATE      100.00 
+                                       expected[0]           0           0           0           0           0           0           3        0.00 
+                                       expected[1]           0           1           0           0           0           0           3       16.66 
+                                       expected[2]           0           0           0           0           0           0           3        0.00 
+                                       expected[3]           0           1           0           0           0           0           3       16.66 
+                                     expected[4-6]           0           0           0           0           0           0           3        0.00 
+                                       expected[7]           0           1           0           0           0           0           3       16.66 
+                                            out[0]           0           0           0           0           0           0           3        0.00 
+                                            out[1]           0           1           0           0           0           0           3       16.66 
+                                            out[2]           0           0           0           0           0           0           3        0.00 
+                                            out[3]           0           1           0           0           0           0           3       16.66 
+                                          out[4-6]           0           0           0           0           0           0           3        0.00 
+                                            out[7]           0           1           0           0           0           0           3       16.66 
+                                             rst_n           0           1           0           0           0           0           3       16.66 
+
+========
+(n*) - Number was not used in coverage calculations performed by extended toggle algorithms.
+
+Extended Toggle Coverage Calculation Criteria:
+-----------------------------------------------
+	ExtMode 1: 0L->1H & 1H->0L & any one 'Z' transition (to/from 'Z').
+	ExtMode 2: 0L->1H & 1H->0L & one transition to 'Z' & one transition from 'Z'.
+	ExtMode 3: 0L->1H & 1H->0L & all 'Z' transitions.
+========
+
+Total Node Count     =         21 
+Toggled Node Count   =          4 
+Untoggled Node Count =         17 
+
+Toggle Coverage      =      13.63% (15 of 110 bins)
+
+
+Total Coverage By Instance (filtered view): 77.34%
+

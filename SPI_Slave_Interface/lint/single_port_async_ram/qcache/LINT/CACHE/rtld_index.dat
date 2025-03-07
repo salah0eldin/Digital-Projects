@@ -1,0 +1,33 @@
+>8
+v366
+t27
+c28
+#8 p1517 @zi_const_0_o32
+#0 p0 @zi_wport_i8_i32_2*i1_o2048
+#1 p209 @zi_rport_i2048_i32_o8
+#2 p381 @zi_dff_o8_i8_5*i1_i8_3*i1
+#3 p656 @zi_dff_o1_10*i1
+#4 p911 @zi_select_o8_i1_i8_i1_i8
+#5 p1097 @zi_oper_24_o1_i1
+#6 p1228 @zi_const_8'b0_o8
+#7 p1352 @zi_mux_o32_i1_2*i32
+#9 p1637 @zi_const_24'b0_o24
+#10 p1765 @zi_oper_32_o32_i24_i8
+#11 p1940 @zi_oper_49_o1_2*i32
+#12 p2099 @zi_const_255_o32
+#13 p2224 @zi_oper_51_o1_2*i32
+#14 p2383 @zi_oper_25_o1_2*i1
+#15 p2530 @zi_const_32'bx_o32
+#16 p2659 @zi_oper_1_o32_2*i32
+#17 p2809 @zi_const_2'h3_o2
+#18 p2934 @zi_oper_16_o1_2*i2
+#19 p3091 @zi_oper_29_o1_2*i1
+#20 p3238 @zi_select_o1_4*i1
+#21 p3408 @zi_const_1'b0_o1
+#22 p3530 @zi_const_2'b0_o2
+#23 p3655 @zi_const_2'b1_o2
+#24 p3780 @zi_const_2'h2_o2
+#25 p3905 @zi_oper_38_o2_i10
+#26 p4050 @zi_oper_38_o8_i10
+#27 p4195 @single_port_async_ram
+<8

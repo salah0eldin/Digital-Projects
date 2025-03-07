@@ -1,0 +1,1 @@
+TraceSignalModule;spi_slave_interface;tx_valid,spi_slave_interface,

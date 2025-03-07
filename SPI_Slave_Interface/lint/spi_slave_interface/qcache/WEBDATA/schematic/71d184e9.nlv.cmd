@@ -1,0 +1,1 @@
+TraceSignalModule;spi_slave_interface;counter,spi_slave_interface,

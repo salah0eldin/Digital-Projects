@@ -1,0 +1,137 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11f vlog 2021.1 2021.01, Jan 19 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/sim/spi_slave_interface_tb
+T_opt
+!s110 1741299628
+VDM]YY9MLOVTdTXCPT=Z>R3
+04 22 4 work spi_slave_interface_tb fast 0
+=1-d481d78af359-67ca1fac-e8-3f90
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2021.1;73
+vsingle_port_async_ram
+Z2 !s110 1741299619
+!i10b 1
+!s100 j>U^4aDD[Ikj=8TJbDEGO3
+I<Ql2T1213WkLcR[P=I<bV2
+R0
+w1741058141
+8../../single_port_async_ram.v
+F../../single_port_async_ram.v
+!i122 0
+L0 1 67
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OL;L;2021.1;73
+r1
+!s85 0
+31
+Z5 !s108 1741299619.000000
+Z6 !s107 ../../spi_slave_interface_tb.v|../../spi_slave_interface_2.v|../../spi_slave_interface.v|../../single_port_async_ram_tb.v|../../single_port_async_ram.v|
+Z7 !s90 -work|work|+acc|-cover|bcesfx|../../single_port_async_ram.v|../../single_port_async_ram_tb.v|../../spi_slave_interface.v|../../spi_slave_interface_2.v|../../spi_slave_interface_tb.v|
+!i113 0
+Z8 !s102 -cover bcesfx
+Z9 o-work work +acc -cover bcesfx -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vsingle_port_async_ram_tb
+R2
+!i10b 1
+!s100 U>2:;C]CU_lUjg575kBZ>1
+I[I?jlUnXKjnl[[bYY:h^b0
+R0
+w1741058847
+8../../single_port_async_ram_tb.v
+F../../single_port_async_ram_tb.v
+!i122 0
+L0 1 90
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+R9
+R1
+vspi_slave_interface
+R2
+!i10b 1
+!s100 1bO7e<[3iGGAF=c_cP?9A3
+IdTYONOKBiM5QF?J>BDSL:0
+R0
+w1741296538
+8../../spi_slave_interface.v
+F../../spi_slave_interface.v
+!i122 0
+L0 1 131
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+R9
+R1
+vspi_slave_interface_2
+R2
+!i10b 1
+!s100 YZ39_2IXU0z=gdU_n1JWE0
+I[=?h[RD6im;hRbMBJ4Kki2
+R0
+w1741299505
+8../../spi_slave_interface_2.v
+F../../spi_slave_interface_2.v
+!i122 0
+L0 1 177
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+R9
+R1
+vspi_slave_interface_tb
+R2
+!i10b 1
+!s100 9hG@2O^PA@nBKY3UQ2SDG3
+I`4bJJ4VfQf]VJTUCPTVSX3
+R0
+w1741299594
+8../../spi_slave_interface_tb.v
+F../../spi_slave_interface_tb.v
+!i122 0
+L0 1 119
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+R9
+R1

@@ -1,0 +1,3 @@
+-f D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/lint/spi_slave_interface/qcache/LINT/SEARCH/SIM/vsim_tb_replay_top_modules.arg \
+-L work \
+-voptargs="-assertdebug"

@@ -1,0 +1,131 @@
+>1
+>2
+20
+0:31:single_port_async_ram_264427739
+1:21:single_port_async_ram
+2:4:work
+3:78:D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/single_port_async_ram.v
+4:5:32'h8
+5:9:ADDR_SIZE
+6:5:32'ha
+7:10:INPUT_SIZE
+8:7:32'h100
+9:9:MEM_DEPTH
+10:9:WORD_SIZE
+11:11:addr_rd_reg
+12:11:addr_wr_reg
+13:3:clk
+14:3:din
+15:4:dout
+16:3:mem
+17:5:rst_n
+18:8:rx_valid
+19:8:tx_valid
+<2
+>3
+5
+0:140:10 "scalar signed[31:0]" "<zin_internal>" 0 6 1 7 "integer[31:0]" "<zin_internal>" 0 10 32 31 0 7 "scalar signed" "<zin_internal>" 0 2 1 0 0
+1:123:10 "scalar[7:0]" "<zin_internal>" 0 4 1 7 "integer[7:0]" "<zin_internal>" 0 10 32 7 0 7 "scalar" "<zin_internal>" 0 0 1 0 0
+2:37:7 "scalar" "<zin_internal>" 0 0 1 0 0
+3:123:10 "scalar[9:0]" "<zin_internal>" 0 4 1 7 "integer[9:0]" "<zin_internal>" 0 10 32 9 0 7 "scalar" "<zin_internal>" 0 0 1 0 0
+4:220:10 "scalar[0:255][7:0]" "<zin_internal>" 0 0 1 7 "integer[0:255]" "<zin_internal>" 0 10 32 0 255 10 "scalar[7:0]" "<zin_internal>" 0 4 1 7 "integer[7:0]" "<zin_internal>" 0 10 32 7 0 7 "scalar" "<zin_internal>" 0 0 1 0 0
+<3
+>4
+e1b2f3l1.67t0c4p5v4F0L4T0U0p7v6F0L5T0U0p9v8F0L3T0U0p10v4F0L6T0U0;
+<4
+>5
+b9@11l34knt1;
+@12l33knt1;
+@13l22knt2;
+@14l9knt3;
+@15l25knt1;
+@16l30knt4;
+@17l23knt2;
+@18l24knt2;
+@19l26knt2;
+<5
+>6
+b6@14l34x4t3;
+@13l34x3t2;
+@17l34x7t2;
+@18l34x8t2;
+@15l34d1x5t1;
+@19l34d1x9t2;
+<6
+>7
+c0
+<7
+<1
+>1
+>2
+31
+0:19:spi_slave_interface
+1:4:work
+2:76:D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/spi_slave_interface.v
+3:5:32'b0
+4:4:IDLE
+5:5:32'h8
+6:13:MEM_ADDR_SIZE
+7:7:32'h100
+8:9:MEM_DEPTH
+9:5:32'ha
+10:14:MEM_INPUT_SIZE
+11:13:MEM_WORD_SIZE
+12:5:32'b1
+13:10:TAKE_INPUT
+14:5:32'h2
+15:9:WRITE_MEM
+16:5:32'h3
+17:9:WRITE_OUT
+18:3:clk
+19:7:counter
+20:2:cs
+21:4:MISO
+22:4:MOSI
+23:2:ns
+24:5:rst_n
+25:7:rx_data
+26:8:rx_valid
+27:4:SS_n
+28:7:tx_data
+29:8:tx_valid
+30:3:ram
+<2
+>3
+6
+0:140:10 "scalar signed[31:0]" "<zin_internal>" 0 6 1 7 "integer[31:0]" "<zin_internal>" 0 10 32 31 0 7 "scalar signed" "<zin_internal>" 0 2 1 0 0
+1:37:7 "scalar" "<zin_internal>" 0 0 1 0 0
+2:123:10 "scalar[3:0]" "<zin_internal>" 0 4 1 7 "integer[3:0]" "<zin_internal>" 0 10 32 3 0 7 "scalar" "<zin_internal>" 0 0 1 0 0
+3:123:10 "scalar[1:0]" "<zin_internal>" 0 4 1 7 "integer[1:0]" "<zin_internal>" 0 10 32 1 0 7 "scalar" "<zin_internal>" 0 0 1 0 0
+4:123:10 "scalar[9:0]" "<zin_internal>" 0 4 1 7 "integer[9:0]" "<zin_internal>" 0 10 32 9 0 7 "scalar" "<zin_internal>" 0 0 1 0 0
+5:123:10 "scalar[7:0]" "<zin_internal>" 0 4 1 7 "integer[7:0]" "<zin_internal>" 0 10 32 7 0 7 "scalar" "<zin_internal>" 0 0 1 0 0
+<3
+>4
+#1b1f2l1.131t0c8p4v3F0L39T0U0p6v5F0L4T0U0p8v7F0L3T0U0p10v9F0L5T0U0p11v5F0L6T0U0p13v12F0L40T0U0p15v14F0L41T0U0p17v16F0L42T0U0;
+<4
+>5
+b12@18l11knt1;
+@19l49knt2;
+@20l46knt3;
+@21l10knt1;
+@22l9knt1;
+@23l46knt3;
+@24l13knt1;
+@25l20knt4;
+@26l19knt1;
+@27l12knt1;
+@28l18knt5;
+@29l17knt1;
+<5
+>6
+b5@22x5t1;
+@21d1x4t1;
+@18x1t1;
+@27x10t1;
+@24x7t1;
+<6
+>7
+c1
+@30i18l28x3 7 0 20;
+<7
+<1
