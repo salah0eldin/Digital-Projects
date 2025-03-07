@@ -38,14 +38,13 @@ Welcome to the Digital Projects repository! This collection showcases the projec
 ### Vivado Project Files
 - **SPI.xpr:** Vivado project TCL script for the optimized SPI Slave Interface.
 - **SPI_2.xpr:** Vivado project TCL script for the required SPI Slave Interface with the debug core.
-
 ### File Locations
-- **Design Files:**     `./SPI_Slave_Interface/`
-- **Test Bench Files:** `./SPI_Slave_Interface/`
-- **Coverage Report:**  `./SPI_Slave_Interface/sim/*/coverage_report.txt`
-- **Do Files:**         `./SPI_Slave_Interface/sim/*/testbench_module_name.do`
-- **Lint Report:**      `./SPI_Slave_Interface/lint/*/lint.rpt`
-- **Constraints Files:** `./SPI_Slave_Interface/viva/*.xdc`
+- **Design Files:**         [./SPI_Slave_Interface/](./SPI_Slave_Interface/)
+- **Test Bench Files:**     [./SPI_Slave_Interface/](./SPI_Slave_Interface/)
+- **Coverage Report:**      [./SPI_Slave_Interface/sim/*/coverage_report.txt](./SPI_Slave_Interface/sim/*/coverage_report.txt)
+- **Do Files:**             [./SPI_Slave_Interface/sim/*/testbench_module_name.do](./SPI_Slave_Interface/sim/*/testbench_module_name.do)
+- **Lint Report:**          [./SPI_Slave_Interface/lint/*/lint.rpt](./SPI_Slave_Interface/lint/*/lint.rpt)
+- **Constraints Files:**    [./SPI_Slave_Interface/viva/*.xdc](./SPI_Slave_Interface/viva/*.xdc)
 
 ## DSP48A1
 
