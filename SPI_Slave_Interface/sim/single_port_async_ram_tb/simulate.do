@@ -1,5 +1,5 @@
 vcd file simulation.vcd
 vcd add -r /*
 run -all
-vcd flush
+coverage save -onexit coverage.ucdb
 quit

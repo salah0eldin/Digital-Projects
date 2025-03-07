@@ -1,0 +1,254 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /single_port_async_ram_tb/dut
+=== Design Unit: work.single_port_async_ram
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         9         8         1    88.88%
+
+================================Branch Details================================
+
+Branch Coverage for instance /single_port_async_ram_tb/dut
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File ../../single_port_async_ram.v
+------------------------------------IF Branch------------------------------------
+    37                                        10     Count coming in to IF
+    37              1                          1     
+    42              1                          9     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    43                                         9     Count coming in to IF
+    43              1                          4     
+                                               5     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------CASE Branch------------------------------------
+    45                                         4     Count coming in to CASE
+    46              1                          1     
+    50              1                          1     
+    54              1                          1     
+    58              1                          1     
+                                         ***0***     All False Count
+Branch totals: 4 hits of 5 branches = 80.00%
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      13        13         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /single_port_async_ram_tb/dut --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File ../../single_port_async_ram.v
+    36              1                         10     
+    38              1                          1     
+    39              1                          1     
+    40              1                          1     
+    41              1                          1     
+    47              1                          1     
+    48              1                          1     
+    51              1                          1     
+    52              1                          1     
+    55              1                          1     
+    56              1                          1     
+    59              1                          1     
+    60              1                          1     
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        204        19       185     9.31%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /single_port_async_ram_tb/dut --
+
+                                              Node      1H->0L      0L->1H       0L->Z       Z->0L       1H->Z       Z->H1     ExtMode  "Coverage"
+                                              ---------------------------------------------------------------------------------------------------
+                                  addr_rd_reg[7-1]           0           0           0           0           0           0           3        0.00 
+                                    addr_rd_reg[0]           0           1           0           0           0           0           3       16.66 
+                                  addr_wr_reg[7-1]           0           0           0           0           0           0           3        0.00 
+                                    addr_wr_reg[0]           0           1           0           0           0           0           3       16.66 
+                                               clk           1           1           0*          0*          0*          0*    2-STATE      100.00 
+                                          din[0-1]           1           1           0*          0*          0*          0*    2-STATE      100.00 
+                                            din[2]           0           0           0           0           0           0           3        0.00 
+                                            din[3]           1           1           0*          0*          0*          0*    2-STATE      100.00 
+                                          din[4-7]           0           0           0           0           0           0           3        0.00 
+                                            din[8]           1           1           0*          0*          0*          0*    2-STATE      100.00 
+                                            din[9]           0           1           0           0           0           0           3       16.66 
+                                         dout[7-4]           0           0           0           0           0           0           3        0.00 
+                                           dout[3]           0           1           0           0           0           0           3       16.66 
+                                           dout[2]           0           0           0           0           0           0           3        0.00 
+                                           dout[1]           0           1           0           0           0           0           3       16.66 
+                                           dout[0]           0           0           0           0           0           0           3        0.00 
+                                             rst_n           0           1           0           0           0           0           3       16.66 
+                                          rx_valid           1           1           0*          0*          0*          0*    2-STATE      100.00 
+                                          tx_valid           0           1           0           0           0           0           3       16.66 
+
+========
+(n*) - Number was not used in coverage calculations performed by extended toggle algorithms.
+
+Extended Toggle Coverage Calculation Criteria:
+-----------------------------------------------
+	ExtMode 1: 0L->1H & 1H->0L & any one 'Z' transition (to/from 'Z').
+	ExtMode 2: 0L->1H & 1H->0L & one transition to 'Z' & one transition from 'Z'.
+	ExtMode 3: 0L->1H & 1H->0L & all 'Z' transitions.
+========
+
+Total Node Count     =         38 
+Toggled Node Count   =          6 
+Untoggled Node Count =         32 
+
+Toggle Coverage      =       9.31% (19 of 204 bins)
+
+=================================================================================
+=== Instance: /single_port_async_ram_tb
+=== Design Unit: work.single_port_async_ram_tb
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         2         1         1    50.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /single_port_async_ram_tb
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File ../../single_port_async_ram_tb.v
+------------------------------------IF Branch------------------------------------
+    79                                         1     Count coming in to IF
+    79              1                          1     
+    81              1                    ***0***     
+Branch totals: 1 hit of 2 branches = 50.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                       2         0         2     0.00%
+
+================================Condition Details================================
+
+Condition Coverage for instance /single_port_async_ram_tb --
+
+  File ../../single_port_async_ram_tb.v
+----------------Focused Condition View-------------------
+Line       79 Item    1  (tx_valid && (dout == 10))
+Condition totals: 0 of 2 input terms covered = 0.00%
+
+    Input Term   Covered  Reason for no coverage   Hint
+   -----------  --------  -----------------------  --------------
+      tx_valid         N  '_0' not hit             Hit '_0'
+  (dout == 10)         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:    ***0***  tx_valid_0            -                             
+  Row   2:          1  tx_valid_1            (dout == 10)                  
+  Row   3:    ***0***  (dout == 10)_0        tx_valid                      
+  Row   4:          1  (dout == 10)_1        tx_valid                      
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      34        33         1    97.05%
+
+================================Statement Details================================
+
+Statement Coverage for instance /single_port_async_ram_tb --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File ../../single_port_async_ram_tb.v
+    34              1                          1     
+    35              1                          1     
+    35              2                         22     
+    35              3                         21     
+    41              1                          1     
+    42              1                          1     
+    43              1                          1     
+    46              1                          1     
+    47              1                          1     
+    50              1                          1     
+    51              1                          1     
+    52              1                          1     
+    53              1                          1     
+    54              1                          1     
+    57              1                          1     
+    58              1                          1     
+    59              1                          1     
+    60              1                          1     
+    61              1                          1     
+    64              1                          1     
+    65              1                          1     
+    66              1                          1     
+    67              1                          1     
+    68              1                          1     
+    71              1                          1     
+    72              1                          1     
+    73              1                          1     
+    74              1                          1     
+    75              1                          1     
+    78              1                          1     
+    80              1                          1     
+    82              1                    ***0***     
+    86              1                          1     
+    87              1                          1     
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        108        17        91    15.74%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /single_port_async_ram_tb --
+
+                                              Node      1H->0L      0L->1H       0L->Z       Z->0L       1H->Z       Z->H1     ExtMode  "Coverage"
+                                              ---------------------------------------------------------------------------------------------------
+                                               clk           1           1           0*          0*          0*          0*    2-STATE      100.00 
+                                            din[9]           0           1           0           0           0           0           3       16.66 
+                                            din[8]           1           1           0*          0*          0*          0*    2-STATE      100.00 
+                                          din[7-4]           0           0           0           0           0           0           3        0.00 
+                                            din[3]           1           1           0*          0*          0*          0*    2-STATE      100.00 
+                                            din[2]           0           0           0           0           0           0           3        0.00 
+                                          din[1-0]           1           1           0*          0*          0*          0*    2-STATE      100.00 
+                                           dout[0]           0           0           0           0           0           0           3        0.00 
+                                           dout[1]           0           1           0           0           0           0           3       16.66 
+                                           dout[2]           0           0           0           0           0           0           3        0.00 
+                                           dout[3]           0           1           0           0           0           0           3       16.66 
+                                         dout[4-7]           0           0           0           0           0           0           3        0.00 
+                                             rst_n           0           1           0           0           0           0           3       16.66 
+                                          rx_valid           1           1           0*          0*          0*          0*    2-STATE      100.00 
+                                          tx_valid           0           1           0           0           0           0           3       16.66 
+
+========
+(n*) - Number was not used in coverage calculations performed by extended toggle algorithms.
+
+Extended Toggle Coverage Calculation Criteria:
+-----------------------------------------------
+	ExtMode 1: 0L->1H & 1H->0L & any one 'Z' transition (to/from 'Z').
+	ExtMode 2: 0L->1H & 1H->0L & one transition to 'Z' & one transition from 'Z'.
+	ExtMode 3: 0L->1H & 1H->0L & all 'Z' transitions.
+========
+
+Total Node Count     =         22 
+Toggled Node Count   =          6 
+Untoggled Node Count =         16 
+
+Toggle Coverage      =      15.74% (17 of 108 bins)
+
+
+Total Coverage By Instance (filtered view): 47.80%
+

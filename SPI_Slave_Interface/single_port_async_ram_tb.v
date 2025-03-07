@@ -84,7 +84,7 @@ module single_port_async_ram_tb;
 
         // Finish the simulation
         #10;
-        $finish;
+        $stop;
     end
 
 endmodule

@@ -1,5 +1,5 @@
-# vsim -c -do "D:\Learning\DigitalKareem\Projects\SPI_Slave_Interface\sim\single_port_async_ram_tb\simulate.do" -l D:\Learning\DigitalKareem\Projects\SPI_Slave_Interface\sim\single_port_async_ram_tb\simulation_log.txt work.single_port_async_ram_tb -voptargs="+acc" 
-# Start time: 05:27:38 on Mar 04,2025
+# vsim -c -voptargs="+acc" -coverage -do "simulate.do" -l simulation_log.txt work.single_port_async_ram_tb 
+# Start time: 02:19:16 on Mar 07,2025
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim-64
 # //  Version 2021.1 win64 Jan 19 2021
@@ -17,9 +17,12 @@
 # //
 # Loading work.single_port_async_ram_tb(fast)
 # Loading work.single_port_async_ram(fast)
-# do {D:\Learning\DigitalKareem\Projects\SPI_Slave_Interface\sim\single_port_async_ram_tb\simulate.do}
+# do simulate.do
 # Test Passed: Data read correctly from address 0x01
-# ** Note: $finish    : ../../single_port_async_ram_tb.v(87)
+# ** Note: $stop    : ../../single_port_async_ram_tb.v(87)
 #    Time: 110 ns  Iteration: 0  Instance: /single_port_async_ram_tb
-# End time: 05:27:44 on Mar 04,2025, Elapsed time: 0:00:06
+# Break in Module single_port_async_ram_tb at ../../single_port_async_ram_tb.v line 87
+# Stopped at ../../single_port_async_ram_tb.v line 87
+# Saving coverage database on exit...
+# End time: 02:19:29 on Mar 07,2025, Elapsed time: 0:00:13
 # Errors: 0, Warnings: 0

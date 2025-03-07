@@ -123,107 +123,107 @@ Branch Coverage for instance /spi_slave_interface_2_tb/dut
     ----         ----                      -----     ------ 
   File ../../spi_slave_interface_2.v
 ------------------------------------IF Branch------------------------------------
-    58                                        20     Count coming in to IF
-    58              1                          1     
-    60              1                         19     
+    59                                        20     Count coming in to IF
+    59              1                          1     
+    61              1                         19     
 Branch totals: 2 hits of 2 branches = 100.00%
 
 ------------------------------------IF Branch------------------------------------
-    67                                        36     Count coming in to IF
-    67              1                          2     
-    70              1                         34     
-Branch totals: 2 hits of 2 branches = 100.00%
-
-------------------------------------CASE Branch------------------------------------
-    71                                        34     Count coming in to CASE
-    72              1                          8     
-    78              1                          6     
-    88              1                         11     
-    94              1                          5     
-    100             1                          4     
-    106             1                    ***0***     
-Branch totals: 5 hits of 6 branches = 83.33%
-
-------------------------------------IF Branch------------------------------------
-    73                                         8     Count coming in to IF
-    73              1                          4     
-    75              1                          4     
-Branch totals: 2 hits of 2 branches = 100.00%
-
-------------------------------------IF Branch------------------------------------
-    79                                         6     Count coming in to IF
-    79              1                          3     
-    81              1                          3     
-Branch totals: 2 hits of 2 branches = 100.00%
-
-------------------------------------IF Branch------------------------------------
-    82                                         3     Count coming in to IF
-    82              1                          1     
-    84              1                          2     
-Branch totals: 2 hits of 2 branches = 100.00%
-
-------------------------------------IF Branch------------------------------------
-    89                                        11     Count coming in to IF
-    89              1                          2     
-    91              1                          9     
-Branch totals: 2 hits of 2 branches = 100.00%
-
-------------------------------------IF Branch------------------------------------
-    95                                         5     Count coming in to IF
-    95              1                          1     
-    97              1                          4     
-Branch totals: 2 hits of 2 branches = 100.00%
-
-------------------------------------IF Branch------------------------------------
-    101                                        4     Count coming in to IF
-    101             1                          1     
-    103             1                          3     
-Branch totals: 2 hits of 2 branches = 100.00%
-
-------------------------------------IF Branch------------------------------------
-    113                                       66     Count coming in to IF
-    113             1                          1     
-    118             1                         65     
+    68                                        36     Count coming in to IF
+    68              1                          2     
+    71              1                         34     
 Branch totals: 2 hits of 2 branches = 100.00%
 
 ------------------------------------CASE Branch------------------------------------
-    121                                       65     Count coming in to CASE
-    122             1                          7     
-    125             1                          4     
-    128             1                         22     
-    137             1                         11     
-    148             1                         21     
-    167             1                    ***0***     
+    72                                        34     Count coming in to CASE
+    73              1                          8     
+    79              1                          6     
+    89              1                         11     
+    95              1                          5     
+    101             1                          4     
+    107             1                    ***0***     
 Branch totals: 5 hits of 6 branches = 83.33%
 
 ------------------------------------IF Branch------------------------------------
-    129                                       22     Count coming in to IF
-    129             1                          2     
-    131             1                         20     
+    74                                         8     Count coming in to IF
+    74              1                          4     
+    76              1                          4     
 Branch totals: 2 hits of 2 branches = 100.00%
 
 ------------------------------------IF Branch------------------------------------
-    139                                       11     Count coming in to IF
-    139             1                          1     
-    142             1                         10     
+    80                                         6     Count coming in to IF
+    80              1                          3     
+    82              1                          3     
 Branch totals: 2 hits of 2 branches = 100.00%
 
 ------------------------------------IF Branch------------------------------------
-    150                                       21     Count coming in to IF
-    150             1                          1     
-    152             1                         10     
-    159             1                         10     
+    83                                         3     Count coming in to IF
+    83              1                          1     
+    85              1                          2     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    90                                        11     Count coming in to IF
+    90              1                          2     
+    92              1                          9     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    96                                         5     Count coming in to IF
+    96              1                          1     
+    98              1                          4     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    102                                        4     Count coming in to IF
+    102             1                          1     
+    104             1                          3     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    114                                       66     Count coming in to IF
+    114             1                          1     
+    119             1                         65     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------CASE Branch------------------------------------
+    122                                       65     Count coming in to CASE
+    123             1                          7     
+    126             1                          4     
+    129             1                         22     
+    138             1                         11     
+    149             1                         21     
+    168             1                    ***0***     
+Branch totals: 5 hits of 6 branches = 83.33%
+
+------------------------------------IF Branch------------------------------------
+    130                                       22     Count coming in to IF
+    130             1                          2     
+    132             1                         20     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    140                                       11     Count coming in to IF
+    140             1                          1     
+    143             1                         10     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    151                                       21     Count coming in to IF
+    151             1                          1     
+    154             1                         10     
+    161             1                         10     
 Branch totals: 3 hits of 3 branches = 100.00%
 
 ------------------------------------IF Branch------------------------------------
-    154                                       10     Count coming in to IF
-    154             1                          8     
+    156                                       10     Count coming in to IF
+    156             1                          8     
                                                2     All False Count
 Branch totals: 2 hits of 2 branches = 100.00%
 
 ------------------------------------IF Branch------------------------------------
-    162                                       10     Count coming in to IF
-    162             1                    ***0***     
+    164                                       10     Count coming in to IF
+    164             1                    ***0***     
                                               10     All False Count
 Branch totals: 1 hit of 2 branches = 50.00%
 
@@ -239,7 +239,7 @@ Condition Coverage for instance /spi_slave_interface_2_tb/dut --
 
   File ../../spi_slave_interface_2.v
 ----------------Focused Condition View-------------------
-Line       129 Item    1  (counter >= 10)
+Line       130 Item    1  (counter >= 10)
 Condition totals: 1 of 1 input term covered = 100.00%
 
        Input Term   Covered  Reason for no coverage   Hint
@@ -252,7 +252,7 @@ Condition totals: 1 of 1 input term covered = 100.00%
   Row   2:          1  (counter >= 10)_1     -                             
 
 ----------------Focused Condition View-------------------
-Line       139 Item    1  (counter >= 10)
+Line       140 Item    1  (counter >= 10)
 Condition totals: 1 of 1 input term covered = 100.00%
 
        Input Term   Covered  Reason for no coverage   Hint
@@ -265,7 +265,7 @@ Condition totals: 1 of 1 input term covered = 100.00%
   Row   2:          1  (counter >= 10)_1     -                             
 
 ----------------Focused Condition View-------------------
-Line       150 Item    1  (counter >= 18)
+Line       151 Item    1  (counter >= 18)
 Condition totals: 1 of 1 input term covered = 100.00%
 
        Input Term   Covered  Reason for no coverage   Hint
@@ -278,7 +278,7 @@ Condition totals: 1 of 1 input term covered = 100.00%
   Row   2:          1  (counter >= 18)_1     -                             
 
 ----------------Focused Condition View-------------------
-Line       152 Item    1  (counter >= 10)
+Line       154 Item    1  (counter >= 10)
 Condition totals: 1 of 1 input term covered = 100.00%
 
        Input Term   Covered  Reason for no coverage   Hint
@@ -291,7 +291,7 @@ Condition totals: 1 of 1 input term covered = 100.00%
   Row   2:          1  (counter >= 10)_1     -                             
 
 ----------------Focused Condition View-------------------
-Line       162 Item    1  (counter >= 10)
+Line       164 Item    1  (counter >= 10)
 Condition totals: 0 of 1 input term covered = 0.00%
 
        Input Term   Covered  Reason for no coverage   Hint
@@ -321,11 +321,11 @@ FSM_ID: cs
     ---------------------
 Line          State Name               Value
 ----          ----------               -----
-  72                IDLE                   0
-  78             CHK_CMD                   1
-  94            READ_ADD                   3
- 100           READ_DATA                   4
-  88               WRITE                   2
+  73                IDLE                   0
+  79             CHK_CMD                   1
+  95            READ_ADD                   3
+ 101           READ_DATA                   4
+  89               WRITE                   2
     Covered States :
     ----------------
                    State           Hit_count
@@ -339,18 +339,18 @@ Line          State Name               Value
     ---------------------
 Line            Trans_ID           Hit_count          Transition          
 ----            --------           ---------          ----------          
-  74                   0                   4          IDLE -> CHK_CMD               
-  85                   1                   1          CHK_CMD -> READ_ADD           
-  83                   2                   1          CHK_CMD -> READ_DATA          
-  80                   3                   2          CHK_CMD -> WRITE              
-  96                   5                   1          READ_ADD -> IDLE              
- 102                   6                   1          READ_DATA -> IDLE             
-  90                   7                   2          WRITE -> IDLE                 
+  75                   0                   4          IDLE -> CHK_CMD               
+  86                   1                   1          CHK_CMD -> READ_ADD           
+  84                   2                   1          CHK_CMD -> READ_DATA          
+  81                   3                   2          CHK_CMD -> WRITE              
+  97                   5                   1          READ_ADD -> IDLE              
+ 103                   6                   1          READ_DATA -> IDLE             
+  91                   7                   2          WRITE -> IDLE                 
     Uncovered Transitions :
     -----------------------
 Line            Trans_ID          Transition          
 ----            --------          ----------          
-  59                   4          CHK_CMD -> IDLE     
+  60                   4          CHK_CMD -> IDLE     
 
 
     Summary                       Bins      Hits    Misses  Coverage
@@ -369,49 +369,49 @@ Statement Coverage for instance /spi_slave_interface_2_tb/dut --
     Line         Item                      Count     Source 
     ----         ----                      -----     ------ 
   File ../../spi_slave_interface_2.v
-    56              1                         20     
-    59              1                          1     
-    61              1                         19     
-    65              1                         36     
-    68              1                          2     
-    74              1                          4     
-    76              1                          4     
-    80              1                          3     
-    83              1                          1     
-    85              1                          2     
-    90              1                          2     
-    92              1                          9     
-    96              1                          1     
-    98              1                          4     
-    102             1                          1     
-    104             1                          3     
-    106             1                    ***0***     
-    112             1                         66     
-    114             1                          1     
+    57              1                         20     
+    60              1                          1     
+    62              1                         19     
+    66              1                         36     
+    69              1                          2     
+    75              1                          4     
+    77              1                          4     
+    81              1                          3     
+    84              1                          1     
+    86              1                          2     
+    91              1                          2     
+    93              1                          9     
+    97              1                          1     
+    99              1                          4     
+    103             1                          1     
+    105             1                          3     
+    107             1                    ***0***     
+    113             1                         66     
     115             1                          1     
     116             1                          1     
-    119             1                         65     
+    117             1                          1     
     120             1                         65     
-    126             1                          4     
-    130             1                          2     
-    132             1                         20     
+    121             1                         65     
+    127             1                          4     
+    131             1                          2     
     133             1                         20     
     134             1                         20     
-    138             1                         11     
-    140             1                          1     
-    143             1                         10     
+    135             1                         20     
+    139             1                         11     
+    141             1                          1     
     144             1                         10     
     145             1                         10     
-    149             1                         21     
-    153             1                         10     
-    155             1                          8     
-    156             1                          8     
-    160             1                         10     
-    161             1                         10     
-    163             1                    ***0***     
-    168             1                    ***0***     
+    146             1                         10     
+    150             1                         21     
+    155             1                         10     
+    157             1                          8     
+    158             1                          8     
+    162             1                         10     
+    163             1                         10     
+    165             1                    ***0***     
     169             1                    ***0***     
     170             1                    ***0***     
+    171             1                    ***0***     
 Toggle Coverage:
     Enabled Coverage              Bins      Hits    Misses  Coverage
     ----------------              ----      ----    ------  --------

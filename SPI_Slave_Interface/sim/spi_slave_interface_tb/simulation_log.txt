@@ -1,5 +1,5 @@
 # vsim -c -voptargs="+acc" -coverage -do "simulate.do" -l simulation_log.txt work.spi_slave_interface_tb 
-# Start time: 00:20:27 on Mar 07,2025
+# Start time: 02:19:40 on Mar 07,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Note: (vopt-143) Recognized 1 FSM in module "spi_slave_interface(fast)".
 # //  Questa Sim-64
@@ -20,11 +20,11 @@
 # Loading work.spi_slave_interface(fast)
 # Loading work.single_port_async_ram(fast)
 # do simulate.do
-# Test Passed: Data read correctly from address 0x01 expected  10, got  10
-# ** Note: $stop    : ../../spi_slave_interface_tb.v(92)
-#    Time: 670 ns  Iteration: 1  Instance: /spi_slave_interface_tb
-# Break in Module spi_slave_interface_tb at ../../spi_slave_interface_tb.v line 92
-# Stopped at ../../spi_slave_interface_tb.v line 92
+# Test Passed: Data read correctly from address 0x01
+# ** Note: $stop    : ../../spi_slave_interface_tb.v(91)
+#    Time: 660 ns  Iteration: 1  Instance: /spi_slave_interface_tb
+# Break in Module spi_slave_interface_tb at ../../spi_slave_interface_tb.v line 91
+# Stopped at ../../spi_slave_interface_tb.v line 91
 # Saving coverage database on exit...
-# End time: 00:20:39 on Mar 07,2025, Elapsed time: 0:00:12
+# End time: 02:19:52 on Mar 07,2025, Elapsed time: 0:00:12
 # Errors: 0, Warnings: 0
