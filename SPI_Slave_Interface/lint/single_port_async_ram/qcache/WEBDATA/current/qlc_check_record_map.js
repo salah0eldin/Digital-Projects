@@ -1,1 +1,0 @@
-var violationRecordID = {"record":{}};

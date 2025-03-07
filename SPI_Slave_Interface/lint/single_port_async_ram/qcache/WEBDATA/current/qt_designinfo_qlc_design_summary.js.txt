@@ -1,7 +1,0 @@
-Register Bits;33
-Latch Bits;0
-User-specified Blackboxes;
-Inferred Blackboxes;
-Empty Modules;
-Unresolved Modules;
-Hierarchical IPs;
