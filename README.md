@@ -1,8 +1,6 @@
-# Digital Projects ![Project Badge](https://img.shields.io/badge/Project-Digital%20Projects-blue)
+# Digital Projects 
 
 Welcome to the Digital Projects repository! This collection showcases the projects undertaken during the Digital Design and Verification Diploma. Each project demonstrates various aspects of digital design and verification techniques.
-
-![Digital Design](https://via.placeholder.com/800x200.png?text=Digital+Design+and+Verification)
 
 ## Table of Contents
 1. [SPI_Slave_Interface](#spi_slave_interface)
@@ -47,7 +45,7 @@ Welcome to the Digital Projects repository! This collection showcases the projec
 - **Lint Report:**          [./SPI_Slave_Interface/lint/*/lint.rpt](./SPI_Slave_Interface/lint/)
 - **Constraints Files:**    [./SPI_Slave_Interface/viva/*.xdc](./SPI_Slave_Interface/viva/)
 
-## DSP48A1 ![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
+## DSP48A1 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 
 **Description:** The DSP48A1 project focuses on the design and implementation of the DSP48A1 block, an essential component in digital signal processing systems. This project includes the design files, test benches, and simulation results.
 
