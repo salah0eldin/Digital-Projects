@@ -16,10 +16,10 @@ SPI_Slave_Interface/lint/*/qcache/
 SPI_Slave_Interface/lint/*/work/
 SPI_Slave_Interface/sim/*/work/
 
-*/viva/*
+DSP48A1/viva/*
 
 !DSP48A1/viva/DSP48A1_viva.runs
 !DSP48A1/viva/*.xdc
 
-!SPI_Slave_Interface/viva/*
+SPI_Slave_Interface/viva/*/
 !SPI_Slave_Interface/viva/*/*.runs
