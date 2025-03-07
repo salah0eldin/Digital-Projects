@@ -21,6 +21,6 @@ SPI_Slave_Interface/sim/*/work/
 !DSP48A1/viva/DSP48A1_viva.runs
 !DSP48A1/viva/*.xdc
 
-!SPI_Slave_Interface/viva/SPI/*.runs
-!SPI_Slave_Interface/viva/SPI_2/*.runs
+!SPI_Slave_Interface/viva/SPI/SPI.runs
+!SPI_Slave_Interface/viva/SPI_2/SPI_2.runs
 !SPI_Slave_Interface/viva/*.xdc
