@@ -1,6 +1,6 @@
 # vsim -c -voptargs="+acc" -coverage -do "simulate.do" -l simulation_log.txt work.spi_slave_interface_2_tb 
-# Start time: 02:19:58 on Mar 07,2025
-# ** Note: (vsim-3812) Design is being optimized...
+# Start time: 05:26:45 on Mar 07,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # ** Note: (vopt-143) Recognized 1 FSM in module "spi_slave_interface_2(fast)".
 # //  Questa Sim-64
 # //  Version 2021.1 win64 Jan 19 2021
@@ -20,11 +20,8 @@
 # Loading work.spi_slave_interface_2(fast)
 # Loading work.single_port_async_ram(fast)
 # do simulate.do
-# Test Passed: Data read correctly from address 0x01
-# ** Note: $stop    : ../../spi_slave_interface_tb.v(91)
-#    Time: 660 ns  Iteration: 1  Instance: /spi_slave_interface_2_tb
-# Break in Module spi_slave_interface_2_tb at ../../spi_slave_interface_tb.v line 91
-# Stopped at ../../spi_slave_interface_tb.v line 91
-# Saving coverage database on exit...
-# End time: 02:20:10 on Mar 07,2025, Elapsed time: 0:00:12
+# Test Passed: Data read correctly from address 0x01 expected  10, got  10
+# ** Note: $finish    : ../../spi_slave_interface_tb.v(96)
+#    Time: 710 ns  Iteration: 1  Instance: /spi_slave_interface_2_tb
+# End time: 05:26:59 on Mar 07,2025, Elapsed time: 0:00:14
 # Errors: 0, Warnings: 0

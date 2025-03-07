@@ -1,3 +1,10 @@
+/**
+* * This module is for submission of the project, it needs debug core as required
+* * but this added an extra not needed clock cycle when reading data because of 
+* * vivado negative hold stack which is not even logical but couldn't resolve it
+* * so sacrificing the extra clock when debugging only
+  */
+
 module spi_slave_interface_2
     #(
          parameter MEM_DEPTH = 256,
@@ -44,7 +51,7 @@ module spi_slave_interface_2
     localparam READ_DATA    = 4;    // Read data is being saved then sent to MISO
 
     // Registers for current state (cs) and next state (ns)
-    (* fsm_encoding = "sequential" *)
+    (* fsm_encoding = "one_hot" *)
     reg [2:0] cs, ns;
 
     // Counter to keep track of bits received or transmitted
@@ -137,7 +144,7 @@ module spi_slave_interface_2
                 end
                 READ_ADD: begin
                     READ_OP <= 1;       // Set READ_OP flag as Address is received
-                    if(counter >= 10) begin
+                    if(counter >= 10) begin // ! this could be only 9 but for vivado negative hold stack became 10
                         rx_valid <= 1;  // Set rx_valid when 10 bits are received
                     end
                     else begin

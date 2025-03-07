@@ -17,6 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param route.enableGlobalHoldIter 1
 create_project -in_memory -part xc7a35ticpg236-1L
 
 set_param project.singleFileAddWarning.threshold 0
@@ -40,8 +41,8 @@ read_verilog -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/viva/SPI.xdc
-set_property used_in_implementation false [get_files D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/viva/SPI.xdc]
+read_xdc D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/viva/SPI_2.xdc
+set_property used_in_implementation false [get_files D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/viva/SPI_2.xdc]
 
 set_param ips.enableIPCacheLiteLoad 0
 close [open __synthesis_is_running__ w]

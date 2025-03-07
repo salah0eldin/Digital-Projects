@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date             : Fri Mar  7 01:07:21 2025
+| Date             : Fri Mar  7 05:20:57 2025
 | Host             : Salah-Eldin-LAP running 64-bit major release  (build 9200)
 | Command          : report_power -file spi_slave_interface_2_power_routed.rpt -pb spi_slave_interface_2_power_summary_routed.pb -rpx spi_slave_interface_2_power_routed.rpx
 | Design           : spi_slave_interface_2
@@ -53,15 +53,15 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.007 |        4 |       --- |             --- |
-| Slice Logic              |    <0.001 |     3722 |       --- |             --- |
-|   LUT as Logic           |    <0.001 |     1157 |     20800 |            5.56 |
-|   Register               |    <0.001 |     1954 |     41600 |            4.70 |
+| Slice Logic              |    <0.001 |     3724 |       --- |             --- |
+|   LUT as Logic           |    <0.001 |     1156 |     20800 |            5.56 |
+|   Register               |    <0.001 |     1956 |     41600 |            4.70 |
 |   CARRY4                 |    <0.001 |       33 |      8150 |            0.40 |
 |   LUT as Shift Register  |    <0.001 |       84 |      9600 |            0.88 |
 |   LUT as Distributed RAM |    <0.001 |       24 |      9600 |            0.25 |
 |   F7/F8 Muxes            |    <0.001 |       10 |     32600 |            0.03 |
 |   Others                 |     0.000 |      243 |       --- |             --- |
-| Signals                  |     0.001 |     2683 |       --- |             --- |
+| Signals                  |    <0.001 |     2682 |       --- |             --- |
 | Block RAM                |     0.001 |        1 |        50 |            2.00 |
 | I/O                      |    <0.001 |        5 |       106 |            4.72 |
 | Static Power             |     0.059 |          |           |                 |
@@ -150,7 +150,7 @@ Table of Contents
 |     inst                                                                           |     0.003 |
 |       BSCANID.u_xsdbm_id                                                           |     0.003 |
 |         CORE_XSDB.UUT_MASTER                                                       |     0.002 |
-|           U_ICON_INTERFACE                                                         |     0.001 |
+|           U_ICON_INTERFACE                                                         |     0.002 |
 |             U_CMD1                                                                 |    <0.001 |
 |             U_CMD2                                                                 |    <0.001 |
 |             U_CMD3                                                                 |    <0.001 |

@@ -65,6 +65,7 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
+  set_param route.enableGlobalHoldIter 1
   create_project -in_memory -part xc7a35ticpg236-1L
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
@@ -73,7 +74,7 @@ set rc [catch {
   set_property ip_output_repo D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/viva/SPI_2/SPI_2.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   add_files -quiet D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/viva/SPI_2/SPI_2.runs/synth_1/spi_slave_interface_2.dcp
-  read_xdc D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/viva/SPI.xdc
+  read_xdc D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/viva/SPI_2.xdc
   link_design -top spi_slave_interface_2 -part xc7a35ticpg236-1L
   close_msg_db -file init_design.pb
 } RESULT]
@@ -146,6 +147,24 @@ if {$rc} {
   return -code error $RESULT
 } else {
   end_step route_design
+  unset ACTIVE_STEP 
+}
+
+start_step write_bitstream
+set ACTIVE_STEP write_bitstream
+set rc [catch {
+  create_msg_db write_bitstream.pb
+  catch { write_mem_info -force spi_slave_interface_2.mmi }
+  write_bitstream -force spi_slave_interface_2.bit 
+  catch {write_debug_probes -quiet -force spi_slave_interface_2}
+  catch {file copy -force spi_slave_interface_2.ltx debug_nets.ltx}
+  close_msg_db -file write_bitstream.pb
+} RESULT]
+if {$rc} {
+  step_failed write_bitstream
+  return -code error $RESULT
+} else {
+  end_step write_bitstream
   unset ACTIVE_STEP 
 }
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35ticpg236-1L" LaunchTime="1741125468">
+<GenRun Id="synth_1" LaunchPart="xc7a35ticpg236-1L" LaunchTime="1741316619">
   <File Type="PA-TCL" Name="spi_slave_interface.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="spi_slave_interface_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="spi_slave_interface_reports.tcl"/>
@@ -40,14 +40,11 @@
       </FileInfo>
     </File>
     <Config>
-      <Option Name="TargetConstrsFile" Val="$PPRDIR/../SPI.xdc"/>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

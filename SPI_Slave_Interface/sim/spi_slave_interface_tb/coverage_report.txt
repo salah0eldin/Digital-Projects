@@ -17,15 +17,15 @@ Branch Coverage for instance /spi_slave_interface_tb/dut/ram
     ----         ----                      -----     ------ 
   File ../../single_port_async_ram.v
 ------------------------------------IF Branch------------------------------------
-    37                                        51     Count coming in to IF
+    37                                        50     Count coming in to IF
     37              1                          1     
-    42              1                         50     
+    42              1                         49     
 Branch totals: 2 hits of 2 branches = 100.00%
 
 ------------------------------------IF Branch------------------------------------
-    43                                        50     Count coming in to IF
+    43                                        49     Count coming in to IF
     43              1                          5     
-                                              45     All False Count
+                                              44     All False Count
 Branch totals: 2 hits of 2 branches = 100.00%
 
 ------------------------------------CASE Branch------------------------------------
@@ -50,7 +50,7 @@ Statement Coverage for instance /spi_slave_interface_tb/dut/ram --
     Line         Item                      Count     Source 
     ----         ----                      -----     ------ 
   File ../../single_port_async_ram.v
-    36              1                         51     
+    36              1                         50     
     38              1                          1     
     39              1                          1     
     40              1                          1     
@@ -113,7 +113,7 @@ Toggle Coverage      =      17.22% (31 of 180 bins)
 Branch Coverage:
     Enabled Coverage              Bins      Hits    Misses  Coverage
     ----------------              ----      ----    ------  --------
-    Branches                        27        25         2    92.59%
+    Branches                        24        22         2    91.66%
 
 ================================Branch Details================================
 
@@ -123,69 +123,66 @@ Branch Coverage for instance /spi_slave_interface_tb/dut
     ----         ----                      -----     ------ 
   File ../../spi_slave_interface.v
 ------------------------------------IF Branch------------------------------------
-    54                                        23     Count coming in to IF
-    54              1                          1     
-    56              1                         22     
+    61                                        21     Count coming in to IF
+    61              1                          1     
+    63              1                         20     
 Branch totals: 2 hits of 2 branches = 100.00%
 
 ------------------------------------IF Branch------------------------------------
-    63                                        72     Count coming in to IF
-    63              1                          2     
-    66              1                         70     
-Branch totals: 2 hits of 2 branches = 100.00%
-
-------------------------------------CASE Branch------------------------------------
-    67                                        70     Count coming in to CASE
-    68              1                          8     
-    74              1                         44     
-    80              1                          8     
-    88              1                         10     
-    94              1                    ***0***     
-Branch totals: 4 hits of 5 branches = 80.00%
-
-------------------------------------IF Branch------------------------------------
-    69                                         8     Count coming in to IF
-    69              1                          4     
-    71              1                          4     
-Branch totals: 2 hits of 2 branches = 100.00%
-
-------------------------------------IF Branch------------------------------------
-    75                                        44     Count coming in to IF
-    75              1                          4     
-    77              1                         40     
-Branch totals: 2 hits of 2 branches = 100.00%
-
-------------------------------------IF Branch------------------------------------
-    81                                         8     Count coming in to IF
-    81              1                          1     
-    83              1                          3     
-    85              1                          4     
-Branch totals: 3 hits of 3 branches = 100.00%
-
-------------------------------------IF Branch------------------------------------
-    89                                        10     Count coming in to IF
-    89              1                          1     
-    91              1                          9     
-Branch totals: 2 hits of 2 branches = 100.00%
-
-------------------------------------IF Branch------------------------------------
-    101                                       63     Count coming in to IF
-    101             1                          1     
-    105             1                         62     
+    70                                        71     Count coming in to IF
+    70              1                          2     
+    73              1                         69     
 Branch totals: 2 hits of 2 branches = 100.00%
 
 ------------------------------------CASE Branch------------------------------------
-    107                                       62     Count coming in to CASE
-    108             1                          4     
-    111             1                         44     
-    115             1                          5     
-    118             1                          9     
-                                         ***0***     All False Count
-Branch totals: 4 hits of 5 branches = 80.00%
+    74                                        69     Count coming in to CASE
+    75              1                          8     
+    81              1                         44     
+    87              1                         17     
+    93              1                    ***0***     
+Branch totals: 3 hits of 4 branches = 75.00%
 
 ------------------------------------IF Branch------------------------------------
-    119                                        9     Count coming in to IF
-    119             1                          8     
+    76                                         8     Count coming in to IF
+    76              1                          4     
+    78              1                          4     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    82                                        44     Count coming in to IF
+    82              1                          4     
+    84              1                         40     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    88                                        17     Count coming in to IF
+    88              1                          4     
+    90              1                         13     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    100                                       62     Count coming in to IF
+    100             1                          1     
+    104             1                         61     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------CASE Branch------------------------------------
+    106                                       61     Count coming in to CASE
+    107             1                          4     
+    110             1                         44     
+    114             1                         13     
+    124             1                    ***0***     
+Branch totals: 3 hits of 4 branches = 75.00%
+
+------------------------------------IF Branch------------------------------------
+    115                                       13     Count coming in to IF
+    115             1                          9     
+    120             1                          4     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    116                                        9     Count coming in to IF
+    116             1                          8     
                                                1     All False Count
 Branch totals: 2 hits of 2 branches = 100.00%
 
@@ -201,7 +198,7 @@ Condition Coverage for instance /spi_slave_interface_tb/dut --
 
   File ../../spi_slave_interface.v
 ----------------Focused Condition View-------------------
-Line       75 Item    1  (counter >= 10)
+Line       82 Item    1  (counter >= 10)
 Condition totals: 1 of 1 input term covered = 100.00%
 
        Input Term   Covered  Reason for no coverage   Hint
@@ -214,7 +211,7 @@ Condition totals: 1 of 1 input term covered = 100.00%
   Row   2:          1  (counter >= 10)_1     -                             
 
 ----------------Focused Condition View-------------------
-Line       81 Item    1  ((rx_data[9:8] == 3) && tx_valid)
+Line       115 Item    1  ((rx_data[9:8] == 3) && tx_valid)
 Condition totals: 2 of 2 input terms covered = 100.00%
 
            Input Term   Covered  Reason for no coverage   Hint
@@ -230,7 +227,7 @@ Condition totals: 2 of 2 input terms covered = 100.00%
   Row   4:          1  tx_valid_1             (rx_data[9:8] == 3)           
 
 ----------------Focused Condition View-------------------
-Line       119 Item    1  (counter < 8)
+Line       116 Item    1  (counter < 8)
 Condition totals: 1 of 1 input term covered = 100.00%
 
      Input Term   Covered  Reason for no coverage   Hint
@@ -254,7 +251,7 @@ Expression Coverage for instance /spi_slave_interface_tb/dut --
 
   File ../../spi_slave_interface.v
 ----------------Focused Expression View-----------------
-Line       128 Item    1  (cs == 2)
+Line       131 Item    1  (cs == 2)
 Expression totals: 1 of 1 input term covered = 100.00%
 
   Input Term   Covered  Reason for no coverage   Hint
@@ -270,8 +267,8 @@ Expression totals: 1 of 1 input term covered = 100.00%
 FSM Coverage:
     Enabled Coverage              Bins      Hits    Misses  Coverage
     ----------------              ----      ----    ------  --------
-    FSM States                       4         4         0   100.00%
-    FSM Transitions                  6         5         1    83.33%
+    FSM States                       3         3         0   100.00%
+    FSM Transitions                  4         3         1    75.00%
 
 ================================FSM Details================================
 
@@ -284,42 +281,38 @@ FSM_ID: cs
     ---------------------
 Line          State Name               Value
 ----          ----------               -----
-  68                IDLE                   0
-  74          TAKE_INPUT                   1
-  80           WRITE_MEM                   2
-  88           WRITE_OUT                   3
+  75                IDLE                   0
+  81          TAKE_INPUT                   1
+  87       WRITE_MEM_OUT                   2
     Covered States :
     ----------------
                    State           Hit_count
                    -----           ---------
                     IDLE                   8          
               TAKE_INPUT                   8          
-               WRITE_MEM                   5          
-               WRITE_OUT                   2          
+           WRITE_MEM_OUT                   5          
     Covered Transitions :
     ---------------------
 Line            Trans_ID           Hit_count          Transition          
 ----            --------           ---------          ----------          
-  70                   0                   4          IDLE -> TAKE_INPUT            
-  76                   1                   4          TAKE_INPUT -> WRITE_MEM          
-  84                   3                   3          WRITE_MEM -> IDLE             
-  82                   4                   1          WRITE_MEM -> WRITE_OUT          
-  90                   5                   1          WRITE_OUT -> IDLE             
+  77                   0                   4          IDLE -> TAKE_INPUT            
+  83                   1                   4          TAKE_INPUT -> WRITE_MEM_OUT          
+  89                   3                   4          WRITE_MEM_OUT -> IDLE          
     Uncovered Transitions :
     -----------------------
 Line            Trans_ID          Transition          
 ----            --------          ----------          
-  55                   2          TAKE_INPUT -> IDLE  
+  62                   2          TAKE_INPUT -> IDLE  
 
 
     Summary                       Bins      Hits    Misses  Coverage
     -------                       ----      ----    ------  --------
-        FSM States                   4         4         0   100.00%
-        FSM Transitions              6         5         1    83.33%
+        FSM States                   3         3         0   100.00%
+        FSM Transitions              4         3         1    75.00%
 Statement Coverage:
     Enabled Coverage              Bins      Hits    Misses  Coverage
     ----------------              ----      ----    ------  --------
-    Statements                      26        25         1    96.15%
+    Statements                      24        22         2    91.66%
 
 ================================Statement Details================================
 
@@ -328,32 +321,30 @@ Statement Coverage for instance /spi_slave_interface_tb/dut --
     Line         Item                      Count     Source 
     ----         ----                      -----     ------ 
   File ../../spi_slave_interface.v
-    52              1                         23     
-    55              1                          1     
-    57              1                         22     
-    61              1                         72     
-    64              1                          2     
-    70              1                          4     
-    72              1                          4     
-    76              1                          4     
-    78              1                         40     
-    82              1                          1     
-    84              1                          3     
-    86              1                          4     
-    90              1                          1     
-    92              1                          9     
-    94              1                    ***0***     
-    100             1                         63     
+    59              1                         21     
+    62              1                          1     
+    64              1                         20     
+    68              1                         71     
+    71              1                          2     
+    77              1                          4     
+    79              1                          4     
+    83              1                          4     
+    85              1                         40     
+    89              1                          4     
+    91              1                         13     
+    93              1                    ***0***     
+    99              1                         62     
+    101             1                          1     
     102             1                          1     
-    103             1                          1     
-    106             1                         62     
-    109             1                          4     
+    105             1                         61     
+    108             1                          4     
+    111             1                         44     
     112             1                         44     
-    113             1                         44     
-    116             1                          5     
-    120             1                          8     
-    121             1                          8     
-    128             1                         15     
+    117             1                          8     
+    118             1                          8     
+    121             1                          4     
+    125             1                    ***0***     
+    131             1                         14     
 Toggle Coverage:
     Enabled Coverage              Bins      Hits    Misses  Coverage
     ----------------              ----      ----    ------  --------
@@ -463,8 +454,8 @@ NOTE: The modification timestamp for source file '../../spi_slave_interface_tb.v
   File ../../spi_slave_interface_tb.v
     34              1                          1     
     35              1                          1     
-    35              2                        133     
-    35              3                        132     
+    35              2                        131     
+    35              3                        130     
     41              1                          1     
     42              1                          1     
     43              1                          1     
@@ -491,7 +482,6 @@ NOTE: The modification timestamp for source file '../../spi_slave_interface_tb.v
     74              1                          1     
     75              1                          1     
     76              1                          1     
-    77              1                          1     
     78              1                          1     
     79              1                          1     
     82              1                          1     
@@ -506,10 +496,11 @@ NOTE: The modification timestamp for source file '../../spi_slave_interface_tb.v
     101             2                         40     
     102             1                         40     
     103             1                         40     
-    111             1                          1     
-    111             2                          8     
-    112             1                          8     
+    105             1                          4     
+    112             1                          1     
+    112             2                          8     
     113             1                          8     
+    114             1                          8     
 Toggle Coverage:
     Enabled Coverage              Bins      Hits    Misses  Coverage
     ----------------              ----      ----    ------  --------
@@ -556,5 +547,5 @@ Untoggled Node Count =         17
 Toggle Coverage      =      13.63% (15 of 110 bins)
 
 
-Total Coverage By Instance (filtered view): 82.05%
+Total Coverage By Instance (filtered view): 80.55%
 

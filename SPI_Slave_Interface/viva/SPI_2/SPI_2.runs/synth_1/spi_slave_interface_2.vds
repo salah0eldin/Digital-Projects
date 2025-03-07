@@ -2,8 +2,8 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Fri Mar  7 01:04:07 2025
-# Process ID: 4788
+# Start of session at: Fri Mar  7 05:18:03 2025
+# Process ID: 14340
 # Current directory: D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/viva/SPI_2/SPI_2.runs/synth_1
 # Command line: vivado.exe -log spi_slave_interface_2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source spi_slave_interface_2.tcl
 # Log file: D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/viva/SPI_2/SPI_2.runs/synth_1/spi_slave_interface_2.vds
@@ -15,11 +15,11 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 9512 
+INFO: Helper process launched with PID 13616 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 355.785 ; gain = 98.871
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 355.871 ; gain = 99.016
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'spi_slave_interface_2' [D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/spi_slave_interface_2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'spi_slave_interface_2' [D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/spi_slave_interface_2.v:8]
 	Parameter MEM_DEPTH bound to: 256 - type: integer 
 	Parameter MEM_ADDR_SIZE bound to: 8 - type: integer 
 	Parameter MEM_INPUT_SIZE bound to: 10 - type: integer 
@@ -29,16 +29,16 @@ INFO: [Synth 8-6157] synthesizing module 'spi_slave_interface_2' [D:/Learning/Di
 	Parameter WRITE bound to: 2 - type: integer 
 	Parameter READ_ADD bound to: 3 - type: integer 
 	Parameter READ_DATA bound to: 4 - type: integer 
-INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "sequential" *) [D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/spi_slave_interface_2.v:47]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "one_hot" *) [D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/spi_slave_interface_2.v:55]
 INFO: [Synth 8-6157] synthesizing module 'single_port_async_ram' [D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/single_port_async_ram.v:1]
 	Parameter MEM_DEPTH bound to: 256 - type: integer 
 	Parameter ADDR_SIZE bound to: 8 - type: integer 
 	Parameter INPUT_SIZE bound to: 10 - type: integer 
 	Parameter WORD_SIZE bound to: 8 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'single_port_async_ram' (1#1) [D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/single_port_async_ram.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'spi_slave_interface_2' (2#1) [D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/spi_slave_interface_2.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'spi_slave_interface_2' (2#1) [D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/spi_slave_interface_2.v:8]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 411.074 ; gain = 154.160
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 409.844 ; gain = 152.988
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -51,41 +51,41 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 411.074 ; gain = 154.160
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 409.844 ; gain = 152.988
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 411.074 ; gain = 154.160
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 409.844 ; gain = 152.988
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35ticpg236-1L
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/viva/SPI.xdc]
-Finished Parsing XDC File [D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/viva/SPI.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/viva/SPI.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/spi_slave_interface_2_propImpl.xdc].
+Parsing XDC File [D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/viva/SPI_2.xdc]
+Finished Parsing XDC File [D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/viva/SPI_2.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/viva/SPI_2.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/spi_slave_interface_2_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/spi_slave_interface_2_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 764.426 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 764.051 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 764.426 ; gain = 507.512
+Finished Constraint Validation : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 764.051 ; gain = 507.195
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35ticpg236-1L
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 764.426 ; gain = 507.512
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 764.051 ; gain = 507.195
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 764.426 ; gain = 507.512
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 764.051 ; gain = 507.195
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'cs_reg' in module 'spi_slave_interface_2'
 INFO: [Synth 8-5544] ROM "READ_OP" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
@@ -96,15 +96,15 @@ INFO: [Synth 8-5544] ROM "ns" won't be mapped to Block RAM because address size 
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
-                    IDLE |                              000 |                              000
-                 CHK_CMD |                              001 |                              001
-                   WRITE |                              010 |                              010
-               READ_DATA |                              011 |                              100
-                READ_ADD |                              100 |                              011
+                    IDLE |                            00001 |                              000
+                 CHK_CMD |                            00010 |                              001
+                   WRITE |                            00100 |                              010
+               READ_DATA |                            01000 |                              100
+                READ_ADD |                            10000 |                              011
 ---------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'cs_reg' using encoding 'sequential' in module 'spi_slave_interface_2'
+INFO: [Synth 8-3354] encoded FSM with state register 'cs_reg' using encoding 'one-hot' in module 'spi_slave_interface_2'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 764.426 ; gain = 507.512
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 764.051 ; gain = 507.195
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -127,12 +127,11 @@ Detailed RTL Component Info :
 +---RAMs : 
 	               2K Bit         RAMs := 1     
 +---Muxes : 
-	   5 Input      5 Bit        Muxes := 1     
-	   5 Input      3 Bit        Muxes := 1     
-	   2 Input      3 Bit        Muxes := 6     
+	   5 Input      5 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 6     
 	   4 Input      1 Bit        Muxes := 4     
 	   2 Input      1 Bit        Muxes := 1     
-	   5 Input      1 Bit        Muxes := 6     
+	   5 Input      1 Bit        Muxes := 5     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -150,11 +149,10 @@ Detailed RTL Component Info :
 	                5 Bit    Registers := 1     
 	                1 Bit    Registers := 3     
 +---Muxes : 
-	   5 Input      5 Bit        Muxes := 1     
-	   5 Input      3 Bit        Muxes := 1     
-	   2 Input      3 Bit        Muxes := 6     
+	   5 Input      5 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 6     
 	   2 Input      1 Bit        Muxes := 1     
-	   5 Input      1 Bit        Muxes := 6     
+	   5 Input      1 Bit        Muxes := 5     
 Module single_port_async_ram 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -181,7 +179,7 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 764.426 ; gain = 507.512
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 764.051 ; gain = 507.195
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -209,13 +207,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 764.426 ; gain = 507.512
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 764.051 ; gain = 507.195
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 776.215 ; gain = 519.301
+Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 775.004 ; gain = 518.148
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -242,7 +240,7 @@ Start Technology Mapping
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-4480] The timing for the instance ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 777.000 ; gain = 520.086
+Finished Technology Mapping : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 775.770 ; gain = 518.914
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -266,7 +264,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 777.000 ; gain = 520.086
+Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 775.770 ; gain = 518.914
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -279,7 +277,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 777.000 ; gain = 520.086
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 775.770 ; gain = 518.914
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -291,25 +289,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 777.000 ; gain = 520.086
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 775.770 ; gain = 518.914
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 777.000 ; gain = 520.086
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 775.770 ; gain = 518.914
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 777.000 ; gain = 520.086
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 775.770 ; gain = 518.914
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 777.000 ; gain = 520.086
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 775.770 ; gain = 518.914
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -327,30 +325,31 @@ Report Cell Usage:
 +------+---------+------+
 |1     |BUFG     |     1|
 |2     |LUT1     |     1|
-|3     |LUT2     |     1|
-|4     |LUT3     |     4|
-|5     |LUT4     |     9|
-|6     |LUT5     |     2|
-|7     |LUT6     |    10|
+|3     |LUT2     |     2|
+|4     |LUT3     |     5|
+|5     |LUT4     |     5|
+|6     |LUT5     |     7|
+|7     |LUT6     |     7|
 |8     |RAMB18E1 |     1|
-|9     |FDRE     |    38|
-|10    |IBUF     |     4|
-|11    |OBUF     |     1|
+|9     |FDRE     |    39|
+|10    |FDSE     |     1|
+|11    |IBUF     |     4|
+|12    |OBUF     |     1|
 +------+---------+------+
 
 Report Instance Areas: 
 +------+---------+----------------------+------+
 |      |Instance |Module                |Cells |
 +------+---------+----------------------+------+
-|1     |top      |                      |    72|
+|1     |top      |                      |    74|
 |2     |  ram    |single_port_async_ram |    28|
 +------+---------+----------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 777.000 ; gain = 520.086
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 775.770 ; gain = 518.914
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 777.000 ; gain = 166.734
-Synthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 777.000 ; gain = 520.086
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 775.770 ; gain = 164.707
+Synthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 775.770 ; gain = 518.914
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -362,9 +361,9 @@ No Unisim elements were transformed.
 INFO: [Common 17-83] Releasing license: Synthesis
 26 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 777.000 ; gain = 533.129
+synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 775.770 ; gain = 531.695
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint 'D:/Learning/DigitalKareem/Projects/SPI_Slave_Interface/viva/SPI_2/SPI_2.runs/synth_1/spi_slave_interface_2.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file spi_slave_interface_2_utilization_synth.rpt -pb spi_slave_interface_2_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.022 . Memory (MB): peak = 777.000 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Fri Mar  7 01:04:57 2025...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 775.770 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Mar  7 05:18:53 2025...

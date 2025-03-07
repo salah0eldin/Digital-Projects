@@ -17,17 +17,17 @@ module spi_slave_interface_2_tb;
 
     // Instantiate the DUT (Device Under Test)
     spi_slave_interface_2 #(
-                              .MEM_DEPTH(MEM_DEPTH),
-                              .MEM_ADDR_SIZE(MEM_ADDR_SIZE),
-                              .MEM_INPUT_SIZE(MEM_INPUT_SIZE),
-                              .MEM_WORD_SIZE(MEM_WORD_SIZE)
-                          ) dut (
-                              .MOSI(MOSI),
-                              .MISO(MISO),
-                              .clk(clk),
-                              .SS_n(SS_n),
-                              .rst_n(rst_n)
-                          );
+        .MEM_DEPTH(MEM_DEPTH),
+        .MEM_ADDR_SIZE(MEM_ADDR_SIZE),
+        .MEM_INPUT_SIZE(MEM_INPUT_SIZE),
+        .MEM_WORD_SIZE(MEM_WORD_SIZE)
+    ) dut (
+        .MOSI(MOSI),
+        .MISO(MISO),
+        .clk(clk),
+        .SS_n(SS_n),
+        .rst_n(rst_n)
+    );
 
     // Clock generation
     initial begin
@@ -50,22 +50,25 @@ module spi_slave_interface_2_tb;
 
         // Write address 0x01
         SS_n = 0;
-        send_data(10'b0000000001); // Write address
+        send_data(10'b0000000001); // Write address 0x01
+        @(negedge clk);
         SS_n = 1;
 
         // Write data 0x0A to address 0x01
         @(negedge clk);
         @(negedge clk);
         SS_n = 0;
-        send_data(10'b0110001010); // Write data
-        expected = 8'b10001010;
+        send_data(10'b0100001010); // Write data 0x0A
+        expected = 8'b00001010;
+        @(negedge clk);
         SS_n = 1;
 
         // Read address 0x01
         @(negedge clk);
         @(negedge clk);
         SS_n = 0;
-        send_data(10'b1000000001); // Read address
+        send_data(10'b1000000001); // Read address 0x01
+        @(negedge clk);
         SS_n = 1;
 
         // Read data from address 0x01
@@ -75,20 +78,22 @@ module spi_slave_interface_2_tb;
         send_data(10'b1100000000); // Read data
         @(negedge clk);
         @(negedge clk);
+        @(negedge clk);
         get_data();
+        @(negedge clk);
         SS_n = 1;
 
-        // Check the output
+        // Wait for tx_valid to go high and check the output
         @(posedge clk);
-        if (out == expected) begin
-            $display("Test Passed: Data read correctly from address 0x01");
+        if (out == 8'h0A) begin
+            $display("Test Passed: Data read correctly from address 0x01 expected %d, got %d", expected, out);
         end else begin
             $display("Test Failed: Incorrect data read from address 0x01 expected %d, got %d", expected, out);
         end
 
         // Finish the simulation
         @(negedge clk);
-        $stop;
+        $finish;
     end
 
     // Task to send data to the DUT
@@ -109,8 +114,8 @@ module spi_slave_interface_2_tb;
         integer i;
         begin
             for (i = 7; i >= 0; i = i - 1) begin
-                @(negedge clk);
                 out[i] = MISO;
+                @(negedge clk);
             end
         end
     endtask
