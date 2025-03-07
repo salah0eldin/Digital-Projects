@@ -83,6 +83,6 @@ For any questions or feedback, please reach out via [GitHub](https://github.com/
 
 ---
 
-Thank you for checking out my Digital Projects repository!
+Thank you for checking out the Digital Projects repository!
 
 ---
