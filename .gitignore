@@ -21,8 +21,4 @@ DSP48A1/viva/*
 !DSP48A1/viva/DSP48A1_viva.runs
 !DSP48A1/viva/*.xdc
 
-SPI_Slave_Interface/viva/*/*.cache
-SPI_Slave_Interface/viva/*/*.hw
-SPI_Slave_Interface/viva/*/*.ip_user_files
-SPI_Slave_Interface/viva/*/*.sim
-SPI_Slave_Interface/viva/*/*.xpr
+SPI_Slave_Interface/viva/*/*
